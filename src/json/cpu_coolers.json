@@ -1,0 +1,67 @@
+{
+    "cpuCoolers": [ 	
+       { 
+          "id":"01", 
+          "imgUrl":"./img/noctua_nh_u9s.png",
+          "name": "Noctua_NHU9S", 
+          "height": 125
+       },
+
+       { 
+        "id":"02", 
+        "imgUrl":"./img/scythe_choten.png",
+        "name": "Scythe_choten", 
+        "height": 120
+       },
+
+       { 
+        "id":"03", 
+        "imgUrl":"./img/noctua_nh_c14s.png",
+        "name": "Noctua_NHC14S", 
+        "height": 115       
+      },
+
+       { 
+        "id":"04", 
+        "imgUrl":"./img/noctua_nh_l9x65.png",
+        "name": "Noctua_NHL9X65", 
+        "height": 65       
+      },
+
+       { 
+        "id":"05", 
+        "imgUrl":"./img/noctua_nhl_12.png",
+        "name": "Noctua_NHL12", 
+        "height": 66
+       },
+
+       { 
+         "id":"06", 
+         "imgUrl":"./img/nh_l9a_am4_chromax_black.png",
+         "name": "Noctua_NH-L9a", 
+         "height": 37
+        },
+
+        { 
+          "id":"07", 
+          "imgUrl":"./img/ID_Cooling_IS-60.png",
+          "name": "ID_Cooling_IS-60", 
+          "height": 55
+         },
+
+         { 
+          "id":"08", 
+          "imgUrl":"./img/Celsius-S24.png",
+          "name": "Celcius_S24", 
+          "height": 66
+         },
+
+         { 
+          "id":"09", 
+          "imgUrl":"./img/black_ridge.png",
+          "name": "Alpenfohn_black_ridge", 
+          "height": 47
+         }
+
+    ]   
+  }

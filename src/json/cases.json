@@ -1,0 +1,196 @@
+{
+  "cases": [ 	
+     { 
+        "id":"01", 
+        "imgUrl":"./img/ncase.png",
+        "name": "Ncase M1", 
+        "maxGpuSlots": 2,
+        "maxGpuLength": 29.5,
+        "psuType": "sff",
+        "maxCoolerHeight": 130,
+        "awards": ["Best Mini-ITX case of 2015 (Hardware_Canucks)"],
+        "isFiltered": false,
+        "isSelected": false
+      }, 
+
+     { 
+        "id":"02", 
+        "imgUrl":"./img/ghost_s1.png",
+        "name": "Loque_Ghost_S1",
+        "maxGpuSlots": "2",
+        "maxGpuLength": 30.5,
+        "psuType": "sff",
+        "maxCoolerHeight": 66,
+        "awards": ["Finalist_of_the_European_Hardware_Awards_2019"],
+        "isFiltered": false,
+        "isSelected": false
+      }, 
+
+     { 
+         "id":"03", 
+         "imgUrl":"./img/dan_case_A4.png",
+         "name": "Dancase_A4-SFX",
+         "maxGpuSlots": "",
+         "maxGpuLength": 30,
+         "psuType": "sff",
+         "maxCoolerHeight": 48,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"04", 
+         "imgUrl":"./img/kolink1.png",
+         "name": "Kolink_Rocket",
+         "maxGpuSlots": "",
+         "maxGpuLength": 31,
+         "psuType": "sff",
+         "maxCoolerHeight": 54,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"05", 
+         "imgUrl":"./img/cougar_qbx.png",
+         "name": "Cougar_QBX",
+         "maxGpuSlots": "",
+         "maxGpuLength": 25,
+         "psuType": "sff",
+         "maxCoolerHeight": 105,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"06", 
+         "imgUrl":"./img/rvz01.png",
+         "name": "RVZ01",
+         "maxGpuSlots": "",
+         "maxGpuLength": 24,
+         "psuType": "sff",
+         "maxCoolerHeight": 82,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"07", 
+         "imgUrl":"./img/sg13.png",
+         "name": "SG13",
+         "maxGpuSlots": "",
+         "maxGpuLength": 15,
+         "psuType": "sff",
+         "maxCoolerHeight": 61,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"08", 
+         "imgUrl":"./img/cerberus.png",
+         "name": "Cerberus",
+         "maxGpuSlots": "",
+         "maxGpuLength": 30,
+         "psuType": "sff",
+         "maxCoolerHeight": 148,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"09", 
+         "imgUrl":"./img/node202.png",
+         "name": "Node_202",
+         "maxGpuSlots": "",
+         "maxGpuLength": 30,
+         "psuType": "sff",
+         "maxCoolerHeight": 56,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"10", 
+         "imgUrl":"./img/corev1.png",
+         "name": "Core_V1",
+         "maxGpuSlots": "",
+         "maxGpuLength": 30,
+         "psuType": "atx",
+         "maxCoolerHeight": 185,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"11", 
+         "imgUrl":"./img/sligersm580.png",
+         "name": "Sliger_SM580",
+         "maxGpuSlots": "",
+         "maxGpuLength": 30,
+         "psuType": "sff",
+         "maxCoolerHeight": 55,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"12", 
+         "imgUrl":"./img/Lazer3D-LZ7.png",
+         "name": "Lazer3D_LZ7",
+         "maxGpuSlots": "",
+         "maxGpuLength": 30,
+         "psuType": "sff",
+         "maxCoolerHeight": 65,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"13", 
+         "imgUrl":"./img/s4mini.png",
+         "name": "S4_mini",
+         "maxGpuSlots": 1,
+         "maxGpuLength": 30,
+         "psuType": "sff",
+         "maxCoolerHeight": 65,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"14", 
+         "imgUrl":"./img/inwin_chopin.png",
+         "name": "Inwin_Chopin",
+         "maxGpuSlots": "",
+         "maxGpuLength": 30,
+         "psuType": "sff",
+         "maxCoolerHeight": 65,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"15", 
+         "imgUrl":"./img/Lone_industries_L5.png",
+         "name": "Lone_industries_L5",
+         "maxGpuSlots": "",
+         "maxGpuLength": 30,
+         "psuType": "sff",
+         "maxCoolerHeight": 65,
+         "isFiltered": false,
+         "isSelected": false
+        },
+
+      { 
+         "id":"16", 
+         "imgUrl":"./img/j-hack_pure_MK2.png",
+         "name": "j-hack_pure_MK2",
+         "maxGpuSlots": "",
+         "maxGpuLength": 30,
+         "psuType": "sff",
+         "maxCoolerHeight": 65
+      }
+   
+  ]   
+}

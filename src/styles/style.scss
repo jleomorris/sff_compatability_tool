@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.navbar {
+  padding: 2.5rem .5rem 0 18rem;
+  background: #10c0bd;
+  
+  .navbar-brand {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    color: white;
+
+    
+  }
+
+  .nav-link {
+    font-size: 2rem;
+    color: white !important;
+    border: 2px solid white;
+    margin: 1rem;
+    border-radius: 4rem;
+    padding: 1rem;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    text-align: center !important;
+  }
+}
+
+
+body {
+  position: relative;
+  margin: 0;
+  // background: #010313;
+  // background: url(https://images.pexels.com/photos/3815729/pexels-photo-3815729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center fixed; 
+  // background-size: cover;
+  font-family: 'Heebo', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  background: #10c0bd;
+  padding: 8rem;
+  padding-top: 0;
+  position: relative;
+  padding-bottom: 150px;
+
+  h2 {
+    margin: 6rem;
+  }
+}
+
+.main-container-headings {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: white;
+}
+
+h3 {
+  font-size: 4rem;
+  text-align: center;
+  width: 25%;
+  margin: 10rem auto;
+  color: white;
+  background:  #fba319d1;
+  padding: 4rem;
+  border-radius: 2rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+  position: relative;
+  top: 6rem;
+  z-index: 2;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+// h3 {
+//   font-size: 3rem;
+//   font-weight: lighter;
+//   color: white;
+// }
+
+p {
+  font-size: 2.0rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import 'welcomeMessage';
+@import 'introCards';
+@import 'cases';
+@import 'cpuCoolers';
+@import 'psus';
+@import 'gpus';
+@import 'breakdown';
+@import 'tutorial';

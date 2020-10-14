@@ -1,0 +1,46 @@
+{
+    "psus": [ 	
+       { 
+          "id":"01", 
+          "imgUrl":"./img/corsairSF.png",
+          "name": "Corsair_SF600/750", 
+          "type": "sff"
+       },
+
+       { 
+         "id":"02", 
+         "imgUrl":"./img/Silverstone_ST45SF-V3.png",
+         "name": "Silverstone_ST45SF-V3", 
+         "type": "sff"
+      },
+
+      { 
+         "id":"03", 
+         "imgUrl":"./img/EVGA_500B.png",
+         "name": "EVGA_500B", 
+         "type": "atx"
+      },
+
+      { 
+         "id":"04", 
+         "imgUrl":"./img/Node202_psu.png",
+         "name": "Node_202", 
+         "type": "sff"
+      },
+
+      { 
+         "id":"05", 
+         "imgUrl":"./img/EVGA_550_G2.png",
+         "name": "EVGA_550/650/750/850_G2", 
+         "type": "atx"
+      },
+
+      { 
+         "id":"05", 
+         "imgUrl":"./img/Mini-Box_160XT.png",
+         "name": "Mini-Box_160XT", 
+         "type": "sff"
+      }
+
+    ]   
+  }

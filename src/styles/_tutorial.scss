@@ -1,0 +1,67 @@
+.tutorial-container {
+  h2 {
+    color: #23272a;
+    text-align: center;
+    margin-top: 10rem;
+    font-weight: 600;
+    font-size: 4rem;
+    padding-top: 20%;
+  }
+
+  .tutorial-container-text {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .tutorial-card-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+  }
+
+  #tutorial-card-1 {
+    background: -webkit-linear-gradient(142.53deg,#00a295,#26e8f4 98.75%),#3dcda7;
+    background: linear-gradient(142.53deg,#00a295,#26e8f4 98.75%),#3dcda7;
+  }
+
+  #tutorial-card-2 {
+    background: linear-gradient(321.82deg,#21f2ff,#4181ff 59.22%,#4475ff 98.02%),#7196ff;
+    background: webkit-linear-gradient(321.82deg,#21f2ff,#4181ff 59.22%,#4475ff 98.02%),#7196ff;
+  }
+
+  #tutorial-card-3 {
+    background: linear-gradient(141.48deg,#f837ee 1.35%,#ffcd4b);
+    background: webkit-linear-gradient(141.48deg,#f837ee 1.35%,#ffcd4b);
+  }
+
+  .tutorial-card {
+    background: #2BC0E4;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin: 1rem;
+    align-items: center;
+    flex-flow: wrap;
+
+    .tutorial-card-title {
+      font-size: 2rem;
+      margin: 2rem;
+    }
+
+    .tutorial-card-text {
+      font-size: 1.25rem;
+    }
+
+    .fa-filter, .fa-eye, .fa-file-alt {
+      font-size: 6rem;
+      margin: 2rem 0;
+    } 
+  }
+}

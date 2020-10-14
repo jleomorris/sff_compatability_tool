@@ -1,0 +1,42 @@
+#welcome-message {
+  background: #10c0bd;
+  color: white;
+  padding: 0;
+  margin: 0;
+  padding-top: 10rem;
+
+  h3 {
+    text-align: center;
+    margin: 8rem 0;
+    width: 24%;
+    margin: 8rem auto;
+    font-size: 5rem;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 8rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-content {
+      // width: 20%;
+    }
+
+    img {
+      // width: 50%;
+    }
+  }
+
+  .wave-container {
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
