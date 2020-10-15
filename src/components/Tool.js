@@ -68,9 +68,9 @@ class Tool extends Component {
 
   handleCaseClick(e) {
     const selectedCaseName = e.target.dataset.name;
-    // Remove tick icon from all cases
+    // Remove tick icon 
     const unselectedCases = this.state.cases.map(pcCase => pcCase.isSelected === true ? { ...pcCase, isSelected: false } : pcCase ); 
-    // Tick selected case
+    // Tick selected
     const selectedCases = unselectedCases.map(pcCase => pcCase.name === selectedCaseName ? { ...pcCase, isSelected: true } : pcCase );
 
     // Display cases, reset cpu coolers, psus and gpus to original lists
@@ -134,33 +134,42 @@ class Tool extends Component {
   }
 
   handleCpuClick(e) {
-    if(this.state.isCpuCoolerSelected || !this.state.isCaseSelected) return;
-
     const selectedCpuCoolerName = e.target.dataset.name;
-    // Enable tick icon for clicked cpu
-    const selectedCpuCoolers = this.state.cpuCoolers.map(cooler => cooler.name===selectedCpuCoolerName ? { ...cooler, isSelected: true } : cooler);    
+    // Remove tick icon
+    const unselectedCpuCoolers = this.state.cpuCoolers.map(cooler => cooler.isSelected === true ? { ...cooler, isSelected: false } : cooler ); 
+    // Tick selected 
+    const selectedCpuCoolers = unselectedCpuCoolers.map(cooler => cooler.name === selectedCpuCoolerName ? { ...cooler, isSelected: true } : cooler );
     const filteredCpuCooler = this.state.cpuCoolers.filter(cooler => cooler.name === selectedCpuCoolerName)[0];
-    
-    // Show tick icon
-    this.setState({ cpuCoolers: selectedCpuCoolers, isCpuCoolerSelected: true, selectedCpuCooler: filteredCpuCooler });
+
+
+     // Display cpu cooler
+     this.setState({ cpuCoolers: selectedCpuCoolers, isCpuCoolerSelected: true, selectedCpuCooler: filteredCpuCooler, isbreakdownContainerReset: false });
   }
-  
+
   handlePsuClick(e) {
-    if(this.state.isPsuSelected || !this.state.isCaseSelected) return;
     const selectedPsuName = e.target.dataset.name;
-    const selectedPsus = this.state.psus.map(psu => psu.name===selectedPsuName ? { ...psu, isSelected: true } : psu);
+    // Remove tick icon
+    const unselectedPsus = this.state.psus.map(psu => psu.isSelected === true ? { ...psu, isSelected: false } : psu ); 
+    // Tick selected
+    const selectedPsus = unselectedPsus.map(psu => psu.name === selectedPsuName ? { ...psu, isSelected: true } : psu );
     const filteredPsu = this.state.psus.filter(psu => psu.name === selectedPsuName)[0];
-    
-    this.setState({ psus: selectedPsus, isPsuSelected: true, selectedPsu: filteredPsu });
+
+
+     // Display cpu cooler
+     this.setState({ psus: selectedPsus, isPsuSelected: true, selectedPsu: filteredPsu, isbreakdownContainerReset: false });
   }
-  
+
   handleGpuClick(e) {
-    if(this.state.isGpuSelected || !this.state.isCaseSelected) return;
     const selectedGpuName = e.target.dataset.name;
-    const selectedGpus = this.state.gpus.map(gpu => gpu.name===selectedGpuName ? { ...gpu, isSelected: true } : gpu);
+    // Remove tick icon
+    const unselectedGpus = this.state.gpus.map(gpu => gpu.isSelected === true ? { ...gpu, isSelected: false } : gpu ); 
+    // Tick selected
+    const selectedGpus = unselectedGpus.map(gpu => gpu.name === selectedGpuName ? { ...gpu, isSelected: true } : gpu );
     const filteredGpu = this.state.gpus.filter(gpu => gpu.name === selectedGpuName)[0];
-    
-    this.setState({ gpus: selectedGpus, isGpuSelected: true, selectedGpu: filteredGpu });
+
+
+     // Display cpu cooler
+     this.setState({ gpus: selectedGpus, isGpuSelected: true, selectedGpu: filteredGpu, isbreakdownContainerReset: false });
   }
 
   handleCpuEyeHover(e) {
