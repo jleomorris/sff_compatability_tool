@@ -1,0 +1,47 @@
+footer {
+  min-height: 10vh;
+  background: black;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: space-around;
+    // margin-left: 10rem;
+  }
+
+  .footer-content {
+    flex: 2;
+    margin: 2rem 0;
+
+    p {
+      font-size: 1.5rem;
+      display: inline-block;
+      margin-right: 2rem;
+    }
+
+    #copyright {
+      font-size: 1rem;
+    }
+
+    .fa-phone-alt, .fa-envelope {
+      margin-right: 2rem;
+    }
+  }
+
+  // .fa-phone-alt, .fa-envelope {
+  //   font-size: 3rem;
+  //   margin: 0 1rem;
+  // }
+}
