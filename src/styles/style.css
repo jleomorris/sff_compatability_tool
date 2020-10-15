@@ -208,7 +208,7 @@ a {
 }
 
 .case-container .case-container-item .case {
-  width: 120px;
+  width: 100px;
   height: 120px;
   background: rgba(233, 230, 230, 0.75);
   -webkit-transform-style: preserve-3d;
@@ -292,7 +292,7 @@ a {
 }
 
 .cpu-cooler-container .cpu-cooler-container-item .cpu-cooler {
-  width: 120px;
+  width: 100px;
   height: 120px;
   background: rgba(233, 230, 230, 0.75);
   -webkit-transform-style: preserve-3d;
@@ -325,9 +325,9 @@ a {
   border-radius: 50%;
   background: #000000eb;
   padding: 0.5rem;
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
-  top: -20px;
+  top: -10px;
   right: -10px;
 }
 
@@ -387,7 +387,7 @@ a {
 }
 
 .psu-container .psu-container-item .psu {
-  width: 120px;
+  width: 100px;
   height: 120px;
   background: rgba(233, 230, 230, 0.75);
   -webkit-transform-style: preserve-3d;
@@ -420,9 +420,9 @@ a {
   border-radius: 50%;
   background: #000000eb;
   padding: 0.5rem;
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
-  top: -20px;
+  top: -10px;
   right: -10px;
 }
 
@@ -482,7 +482,7 @@ a {
 }
 
 .gpu-container .gpu-container-item .gpu {
-  width: 120px;
+  width: 100px;
   height: 120px;
   background: rgba(233, 230, 230, 0.75);
   -webkit-transform-style: preserve-3d;
@@ -515,9 +515,9 @@ a {
   border-radius: 50%;
   background: #000000eb;
   padding: 0.5rem;
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
-  top: -20px;
+  top: -10px;
   right: -10px;
 }
 
