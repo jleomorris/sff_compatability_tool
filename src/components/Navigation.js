@@ -11,26 +11,31 @@ import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 import Tool from './Tool'
 
 
-export default function Navigation() {
-  return(
-    <Navbar expand="lg">
-      <Container fluid>
-      <Navbar.Brand href="#home">
-      <FontAwesomeIcon icon={faDesktop}/>
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#tool">Tool</Nav.Link>
-        </Nav>
+class Navigation extends Tool {
 
-        <Switch>
-          <Route path="/tool" exact component={Tool} />
-        </Switch>
-        
-      </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  )
+  render() {
+    return(
+      <Navbar expand="lg">
+        <Container fluid>
+        <Navbar.Brand href="#home">
+        <FontAwesomeIcon icon={faDesktop}/>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#tool">Tool</Nav.Link>
+          </Nav>
+  
+          <Switch>
+            <Route path="/tool" exact component={Tool} />
+          </Switch>
+          
+        </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    )
+  }
 }
+
+export default Navigation;
