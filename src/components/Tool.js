@@ -35,7 +35,8 @@ class Tool extends Component {
       selectedCpuCooler: null,
       selectedPsu: null,
       selectedGpu: null,
-      isbreakdownContainerReset: false
+      isbreakdownContainerReset: false,
+      // myRef: []
     }
     this.handleBackClick = this.handleBackClick.bind(this);
     this.handleCaseClick = this.handleCaseClick.bind(this);
@@ -265,10 +266,6 @@ class Tool extends Component {
       </>
     );
 
-    const defaultSelectMessage = (
-      <h3>Select a <span>case</span>, <span>CPU cooler</span>, <span>PSU</span> and <span>GPU</span> to see breakdown.</h3>
-    )
-
     const breakdownContainer = (
       <div ref={(ref) => { this.myRef[3] = ref }} className="breakdown-container">
         {this.state.isCaseSelected && this.state.isCpuCoolerSelected && this.state.isPsuSelected && this.state.isGpuSelected ? breakdownGallery : ''}
@@ -277,13 +274,11 @@ class Tool extends Component {
 
     return (
           <>
-            {/* {defaultSelectMessage} */}
-
             <div className="wave-container">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#10c0bd" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,160C640,149,800,75,960,48C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
             </div>
 
-            <h2 class="main-container-heading">Compatability tool</h2>
+            <h2 id="tool" class="main-container-heading">Compatability tool</h2>
             <div className="main-container">
 
               <div className="case-container">

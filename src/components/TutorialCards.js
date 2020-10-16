@@ -10,12 +10,15 @@ import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import Tool from './Tool';
 
-class TutorialCards extends Tool {
-
+class TutorialCards extends Tool {  
+  constructor(props) {
+    super(props);
+  }
+  
   render() {
     return (
       <Container fluid className="tutorial-container">
-        <h2 ref={(ref) => { this.myRef[0] = ref }}>This tool makes matching components so much easier.</h2>
+        <h2 id="features" ref={(ref) => { this.myRef[0] = ref }}>This tool makes matching components so much easier.</h2>
         <div className="tutorial-container-text">Check out the automatic features</div>
         <Container>
           <Row className="tutorial-card-container">

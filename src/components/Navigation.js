@@ -12,6 +12,16 @@ import Tool from './Tool'
 
 
 class Navigation extends Tool {
+  constructor(props) {
+    super(props);
+  }
+
+  // [16/10/20] - Needs fixing, this.myRef is not correct, consider restructuring flow of navigation and TutorialCards components
+  // handleFeaturesClick = () => {
+  //   debugger;
+  //   console.log(this.state.myRef[0])
+  //   this.myRef[0].scrollIntoView(); 
+  // }
 
   render() {
     return(
@@ -23,6 +33,8 @@ class Navigation extends Tool {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
+            {/* [16/10/20] - Needs fixing, this.myRef is not correct, consider restructuring flow of Navigation and TutorialCards components */}
+            {/* <Nav.Link href="#features" onClick={((e) => this.handleFeaturesClick())}>Features</Nav.Link> */} 
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#tool">Tool</Nav.Link>
           </Nav>
