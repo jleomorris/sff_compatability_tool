@@ -16,8 +16,6 @@ import Container from 'react-bootstrap/Container';
 // import './styles/style.css';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-
-
 class Tool extends Component {
   constructor(props) {
     super(props);
@@ -134,32 +132,35 @@ class Tool extends Component {
   }
 
   handleCpuClick(e) {
+    if(!this.state.isCaseSelected) return;
     const selectedCpuCoolerName = e.target.dataset.name;
     // Remove tick icon
     const unselectedCpuCoolers = this.state.cpuCoolers.map(cooler => cooler.isSelected === true ? { ...cooler, isSelected: false } : cooler ); 
     // Tick selected 
     const selectedCpuCoolers = unselectedCpuCoolers.map(cooler => cooler.name === selectedCpuCoolerName ? { ...cooler, isSelected: true } : cooler );
     const filteredCpuCooler = this.state.cpuCoolers.filter(cooler => cooler.name === selectedCpuCoolerName)[0];
-
-
-     // Display cpu cooler
-     this.setState({ cpuCoolers: selectedCpuCoolers, isCpuCoolerSelected: true, selectedCpuCooler: filteredCpuCooler, isbreakdownContainerReset: false });
+    
+    
+    // Display cpu cooler
+    this.setState({ cpuCoolers: selectedCpuCoolers, isCpuCoolerSelected: true, selectedCpuCooler: filteredCpuCooler, isbreakdownContainerReset: false });
   }
-
+  
   handlePsuClick(e) {
+    if(!this.state.isCaseSelected) return;
     const selectedPsuName = e.target.dataset.name;
     // Remove tick icon
     const unselectedPsus = this.state.psus.map(psu => psu.isSelected === true ? { ...psu, isSelected: false } : psu ); 
     // Tick selected
     const selectedPsus = unselectedPsus.map(psu => psu.name === selectedPsuName ? { ...psu, isSelected: true } : psu );
     const filteredPsu = this.state.psus.filter(psu => psu.name === selectedPsuName)[0];
-
-
-     // Display cpu cooler
-     this.setState({ psus: selectedPsus, isPsuSelected: true, selectedPsu: filteredPsu, isbreakdownContainerReset: false });
+    
+    
+    // Display cpu cooler
+    this.setState({ psus: selectedPsus, isPsuSelected: true, selectedPsu: filteredPsu, isbreakdownContainerReset: false });
   }
 
   handleGpuClick(e) {
+    if(!this.state.isCaseSelected) return;
     const selectedGpuName = e.target.dataset.name;
     // Remove tick icon
     const unselectedGpus = this.state.gpus.map(gpu => gpu.isSelected === true ? { ...gpu, isSelected: false } : gpu ); 
@@ -282,8 +283,8 @@ class Tool extends Component {
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#10c0bd" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,160C640,149,800,75,960,48C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
             </div>
 
+            <h2 class="main-container-heading">Compatability tool</h2>
             <div className="main-container">
-              {/* <h2>Case</h2> */}
 
               <div className="case-container">
                 <CaseGallery cases={this.state.cases} handleCaseClick={this.handleCaseClick} handleCheckClick={this.handleCheckClick} />
