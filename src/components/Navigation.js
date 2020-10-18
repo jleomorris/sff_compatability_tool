@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import { faDesktop } from "@fortawesome/free-solid-svg-icons";
+import { faTools } from "@fortawesome/free-solid-svg-icons";
 import Tool from './Tool'
 
 
@@ -28,7 +28,7 @@ class Navigation extends Tool {
       <Navbar expand="lg">
         <Container fluid>
         <Navbar.Brand href="#home">
-        <FontAwesomeIcon icon={faDesktop}/>
+        <FontAwesomeIcon icon={faTools}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
