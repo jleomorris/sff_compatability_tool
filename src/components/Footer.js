@@ -19,6 +19,7 @@ export default function Footer() {
         </p> */}
         <p id="copyright">All product names, logos, and brands are property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names,
           logos, and brands does not imply endorsement</p>
+        <p id="liability">This app serves as merely a suggestive user tool and is not intended to replace professional hardware advice. I do not accept liability for any damage to hardware caused through the use of this tool. </p>
       </div>
 
       <ul>
