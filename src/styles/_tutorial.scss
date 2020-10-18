@@ -21,18 +21,27 @@
   }
 
   #tutorial-card-1 {
-    background: -webkit-linear-gradient(142.53deg,#00a295,#26e8f4 98.75%),#3dcda7;
-    background: linear-gradient(142.53deg,#00a295,#26e8f4 98.75%),#3dcda7;
+    // background: -webkit-linear-gradient(142.53deg,#00a295,#26e8f4 98.75%),#3dcda7;
+    // background: linear-gradient(142.53deg,#00a295,#26e8f4 98.75%),#3dcda7;
+    background: -webkit-linear-gradient(142.53deg, #3f33f2, #ab3232 98.75%), #ff3800;
+    background: linear-gradient(142.53deg, #3f33f2, #ab3232 98.75%), #ff3800;
+    opacity: 0.9;
   }
 
   #tutorial-card-2 {
-    background: linear-gradient(321.82deg,#21f2ff,#4181ff 59.22%,#4475ff 98.02%),#7196ff;
-    background: webkit-linear-gradient(321.82deg,#21f2ff,#4181ff 59.22%,#4475ff 98.02%),#7196ff;
+    // background: linear-gradient(321.82deg,#21f2ff,#4181ff 59.22%,#4475ff 98.02%),#7196ff;
+    // background: webkit-linear-gradient(321.82deg,#21f2ff,#4181ff 59.22%,#4475ff 98.02%),#7196ff;
+    background: -webkit-linear-gradient(321.82deg, #2581f2, #89e1f9 59.22%, #ffa99a 98.02%), #ff0101;
+    background: linear-gradient(321.82deg, #2581f2, #89e1f9 59.22%, #ffa99a 98.02%), #ff0101;
+    opacity: 0.9;
   }
 
   #tutorial-card-3 {
-    background: linear-gradient(141.48deg,#f837ee 1.35%,#ffcd4b);
-    background: webkit-linear-gradient(141.48deg,#f837ee 1.35%,#ffcd4b);
+    // background: linear-gradient(141.48deg,#f837ee 1.35%,#ffcd4b);
+    // background: webkit-linear-gradient(141.48deg,#f837ee 1.35%,#ffcd4b);
+    background: linear-gradient(141.48deg, #f83737 1.35%, #ffcd4b);
+    background: webkit-linear-gradient(141.48deg, #f83737 1.35%, #ffcd4b);
+    opacity: 0.8;
   }
 
   .tutorial-card {
@@ -45,7 +54,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    color: white;
+    color: black;
     margin: 1rem;
     align-items: center;
     flex-flow: wrap;
@@ -53,6 +62,7 @@
     .tutorial-card-title {
       font-size: 2rem;
       margin: 2rem;
+      font-weight: 600;
     }
 
     .tutorial-card-text {
