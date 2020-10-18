@@ -5,7 +5,7 @@
           "imgUrl":"./img/1080ti_fe.png",
           "name": "1080ti_FE", 
           "slots": "2",
-          "length": 26.7
+          "length": 267
        },
 
        { 
@@ -13,7 +13,7 @@
           "imgUrl":"./img/zotac_1650_super.png",
           "name": "zotac_1650_super", 
           "slots": "2",
-          "length": 15.75
+          "length": 157.5
        },
 
        { 
@@ -21,7 +21,7 @@
           "imgUrl":"./img/zotac_2060_amp.png",
           "name": "zotac_2060_amp", 
           "slots": "2",
-          "length": 21.08
+          "length": 210.8
        },
 
        { 
@@ -29,7 +29,7 @@
           "imgUrl":"./img/zotac_1660_super.png",
           "name": "zotac_1660_super", 
           "slots": "2",
-          "length": 17.35
+          "length": 173.5
        },
 
        { 
@@ -37,7 +37,7 @@
           "imgUrl":"./img/Gigabyte_1660_OC.png",
           "name": "Gigabyte_1660_OC", 
           "slots": "2",
-          "length": 17.35
+          "length": 173.5
        },
 
        { 
@@ -45,7 +45,7 @@
           "imgUrl":"./img/Radeon_RX_5700_Challenger.png",
           "name": "ASRock_RX_5700_Challenger", 
           "slots": "2",
-          "length": 24.1
+          "length": 241
        }, 
 
        { 
@@ -53,7 +53,7 @@
           "imgUrl":"./img/Asus_Radeon_RX_5700.png",
           "name": "Asus_Radeon_RX_5700", 
           "slots": "2",
-          "length": 27
+          "length": 270
        }
 
     ]   
