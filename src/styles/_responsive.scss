@@ -1,0 +1,48 @@
+@media only screen and (max-width: 576px) and (min-width: 1px) { 
+  // body {
+  //   background: brown;
+  // }
+
+  .hero-title {
+    font-size: 8rem !important;
+    position: relative !important;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 577px) { 
+  // body {
+  //   background: yellow;
+  // }
+  .hero-title {
+    font-size: 10rem !important;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) { 
+  // body {
+  //   background: red;
+  // }
+  .hero-title {
+    font-size: 13rem !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 993px) { 
+  // body {
+  //   background: blue;
+  // }
+  .hero-title {
+    font-size: 14rem !important;
+  }
+}
+
+// @media only screen and (max-width: 1920px) and (min-width: 1200px) { 
+//   body {
+//     background: green;
+//   }
+//   .hero-title {
+//     font-size: 12rem !important;
+//     top: -10% !important;
+//   }
+// }
+
