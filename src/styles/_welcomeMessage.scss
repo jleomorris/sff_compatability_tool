@@ -13,10 +13,33 @@
     font-size: 5rem;
   }
 
+  .hero-title-container {
+    // height: 100px;
+    position: relative;
+
+    .hero-container-row {
+      position: absolute;
+      bottom: -95px;
+      right: 0;
+    }
+
+  }
+  
   .hero {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
+    // .hero-title {
+    //   position: absolute;
+    //   font-size: 20rem;
+    //   top: -15%;
+    //   color: #0000006e;
+    //   text-align: right;
+    //   z-index: 5;
+    //   padding-right: 2%;
+    // }
 
     h1 {
       font-size: 8rem;
@@ -46,7 +69,7 @@
     }
 
     .hero-content {
-      // width: 20%;
+      margin-right: 10rem;
     }
 
     img {
