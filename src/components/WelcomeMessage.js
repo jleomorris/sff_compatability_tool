@@ -11,7 +11,7 @@ import Col from 'react-bootstrap/Col';
 export default function WelcomeMessage() {
   return (
     <>
-    <div className="hero-title-container" style={{ width: '50%' }}>
+    <div className="hero-title-container">
       <h1 className="hero-title">SFF compatability tool.</h1>
     </div>
       <Jumbotron id="welcome-message">

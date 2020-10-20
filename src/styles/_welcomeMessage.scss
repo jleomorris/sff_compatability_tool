@@ -30,16 +30,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    
-    // .hero-title {
-    //   position: absolute;
-    //   font-size: 20rem;
-    //   top: -15%;
-    //   color: #0000006e;
-    //   text-align: right;
-    //   z-index: 5;
-    //   padding-right: 2%;
-    // }
 
     h1 {
       font-size: 8rem;
@@ -70,10 +60,7 @@
 
     .hero-content {
       margin-right: 10rem;
-    }
-
-    img {
-      // width: 50%;
+      z-index: 5;
     }
   }
 
