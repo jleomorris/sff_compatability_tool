@@ -11,6 +11,8 @@ import gpuData from '../json/gpus.json';
 import BreakdownGallery from './BreakdownGallery';
 import BreakdownPrompt from './BreakdownPrompt'; 
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // import { faLessThanEqual, faLifeRing } from '@fortawesome/free-solid-svg-icons';
 // import $ from 'jquery'
 // import './styles/style.css';
@@ -277,8 +279,17 @@ class Tool extends Component {
             <div className="tool-wave-container">
               {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="##36003aa1" fill-opacity="1" d="M0,288L48,250.7C96,213,192,139,288,96C384,53,480,43,576,69.3C672,96,768,160,864,192C960,224,1056,224,1152,197.3C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> */}
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#36003aa1" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,160C640,149,800,75,960,48C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-            <h2 id="tool" class="main-container-heading">Compatability tool</h2>
             </div>
+
+            <Container fluid className="p-0">
+              <div className="main-container-titles-container" id="tool">
+                <div className="main-container-titles">Case</div>
+                <div className="main-container-titles">Cpu cooler</div>
+                <div className="main-container-titles">PSU</div>
+                <div className="main-container-titles">GPU</div>
+              </div>
+            </Container>
+
 
             <div className="main-container">
 
