@@ -21,7 +21,7 @@ hr {
 }
 
 .hero-title-container {
-  width: 100%;
+  width: 50%;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -30,11 +30,14 @@ hr {
 }
 
 .hero-title-container .hero-title {
-  font-size: 20rem;
+  font-size: 10rem;
   color: #0000006e;
   text-align: right;
-  z-index: 5;
-  padding-right: 2%;
+  padding: 4rem;
+  border: 10px solid #0000006e;
+  margin: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .navbar {
@@ -44,8 +47,12 @@ hr {
 }
 
 .navbar .navbar-brand {
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 0.5rem;
+  color: white;
+}
+
+.navbar .navbar-brand:hover {
   color: white;
 }
 
@@ -197,10 +204,6 @@ a {
   font-size: 5rem;
 }
 
-#welcome-message .hero-title-container {
-  position: relative;
-}
-
 #welcome-message .hero-title-container .hero-container-row {
   position: absolute;
   bottom: -95px;
@@ -214,9 +217,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
 }
 
@@ -248,12 +251,33 @@ a {
 
 #welcome-message .hero .hero-image img {
   width: 600px;
-  z-index: 2;
+  z-index: 5;
 }
 
 #welcome-message .hero .hero-content {
   margin-right: 10rem;
   z-index: 5;
+}
+
+#welcome-message .hero .hero-content p {
+  font-size: 2rem;
+}
+
+#welcome-message .hero .hero-content li {
+  font-size: 2rem;
+}
+
+#welcome-message .hero .hero-content span {
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#welcome-message .hero .hero-content .contact-button {
+  background: #e4c50182;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem 2rem;
 }
 
 #welcome-message .wave-container svg {
@@ -301,7 +325,7 @@ a {
   text-transform: uppercase;
   word-break: break-all;
   text-align: center;
-  margin-top: 0.5rem;
+  margin: 1rem;
   font-size: 1rem;
 }
 
@@ -385,7 +409,7 @@ a {
   text-transform: uppercase;
   word-break: break-all;
   text-align: center;
-  margin-top: 0.5rem;
+  margin: 1rem;
   font-size: 1rem;
 }
 
@@ -480,7 +504,7 @@ a {
   text-transform: uppercase;
   word-break: break-all;
   text-align: center;
-  margin-top: 0.5rem;
+  margin: 1rem;
   font-size: 1rem;
 }
 
@@ -575,7 +599,7 @@ a {
   text-transform: uppercase;
   word-break: break-all;
   text-align: center;
-  margin-top: 0.5rem;
+  margin: 1rem;
   font-size: 1rem;
 }
 
@@ -647,7 +671,7 @@ a {
 }
 
 .breakdown-container {
-  background-color: #070707fa;
+  background-color: #000000eb;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -668,6 +692,15 @@ a {
 
 .breakdown-container .wrapper:focus {
   outline: 0;
+}
+
+.breakdown-container .wrapper .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .breakdown-container .wrapper .fa-times {
@@ -867,7 +900,7 @@ a {
 
 .tutorial-container .tutorial-card-container .tutorial-card {
   border-radius: 10px;
-  height: 250px;
+  height: 275px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,39 +1009,54 @@ footer .footer-content .fa-phone-alt, footer .footer-content .fa-envelope {
 }
 
 @media only screen and (max-width: 576px) and (min-width: 1px) {
+  .hero-title-container {
+    width: 70% !important;
+  }
   .hero-title {
-    font-size: 8rem !important;
-    position: relative !important;
+    font-size: 2.5rem !important;
+    padding: 3rem !important;
   }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 577px) {
+  .hero-title-container {
+    width: 60% !important;
+  }
   .hero-title {
-    font-size: 10rem !important;
+    font-size: 4rem !important;
+    padding: 3.5rem !important;
   }
 }
 
 @media only screen and (max-width: 992px) and (min-width: 769px) {
   .hero-title {
-    font-size: 13rem !important;
+    font-size: 3rem !important;
   }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
   .hero-title {
-    font-size: 14rem !important;
+    font-size: 5rem !important;
   }
 }
 
 @media only screen and (max-width: 3440px) and (min-width: 1920px) {
-  body {
-    background: blue;
-  }
   .hero-title-container {
-    width: 70% !important;
+    width: 50% !important;
+    height: 100vh !important;
   }
   .hero-title {
-    font-size: 22rem !important;
+    font-size: 10rem !important;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1200px) {
+  .hero-title-container {
+    width: 50% !important;
+    height: 100vh !important;
+  }
+  .hero-title {
+    font-size: 7rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

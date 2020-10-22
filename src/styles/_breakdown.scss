@@ -2,7 +2,7 @@ $border-radius-size: 14px;
 $barbarian: #EC9B3B;
 
 .breakdown-container {
-  background-color: #070707fa;
+  background-color: #000000eb;
   width: 100%;
   height: 100%;
   display: flex;
@@ -19,6 +19,11 @@ $barbarian: #EC9B3B;
     
     &:focus {
       outline: 0;
+    }
+
+    .card-container {
+      display: flex;
+      align-items: flex-start;
     }
 
     .fa-times {

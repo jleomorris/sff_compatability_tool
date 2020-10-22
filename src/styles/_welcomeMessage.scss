@@ -15,7 +15,7 @@
 
   .hero-title-container {
     // height: 100px;
-    position: relative;
+    // position: relative;
 
     .hero-container-row {
       position: absolute;
@@ -28,7 +28,7 @@
   .hero {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
 
     h1 {
@@ -54,13 +54,34 @@
 
       img {
         width: 600px;
-        z-index: 2;
+        z-index: 5;
       }
     }
 
     .hero-content {
       margin-right: 10rem;
       z-index: 5;
+
+      p {
+        font-size: 2rem;
+      }
+
+      li {
+        font-size: 2rem;
+      }
+
+      span {
+        color: black;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .contact-button {
+        background: #e4c50182;
+        font-size: 1.5rem;
+        border: none;
+        padding: 1rem 2rem;
+      }
     }
   }
 

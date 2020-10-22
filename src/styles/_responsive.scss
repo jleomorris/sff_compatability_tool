@@ -1,60 +1,71 @@
 @media only screen and (max-width: 576px) and (min-width: 1px) { 
-  // body {
-  //   background: brown;
-  // }
-
-  .hero-title {
-    font-size: 8rem !important;
-    position: relative !important;
-  }
-}
-
-@media only screen and (max-width: 768px) and (min-width: 577px) { 
-  // body {
-  //   background: yellow;
-  // }
-  .hero-title {
-    font-size: 10rem !important;
-  }
-}
-
-@media only screen and (max-width: 992px) and (min-width: 769px) { 
-  // body {
-  //   background: red;
-  // }
-  .hero-title {
-    font-size: 13rem !important;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 993px) { 
-  // body {
-  //   background: blue;
-  // }
-  .hero-title {
-    font-size: 14rem !important;
-  }
-}
-
-@media only screen and (max-width: 3440px) and (min-width: 1920px) { 
   body {
-    background: blue;
+    // background: brown;
   }
   .hero-title-container {
     width: 70% !important;
   }
   .hero-title {
-    font-size: 22rem !important;
+    font-size: 2.5rem !important;
+    padding: 3rem !important;
   }
 }
 
-// @media only screen and (max-width: 1920px) and (min-width: 1200px) { 
-//   body {
-//     background: green;
-//   }
-//   .hero-title {
-//     font-size: 12rem !important;
-//     top: -10% !important;
-//   }
-// }
+@media only screen and (max-width: 768px) and (min-width: 577px) { 
+  body {
+    // background: yellow;
+  }
+  .hero-title-container {
+    width: 60% !important;
+  }
+  .hero-title {
+    font-size: 4rem !important;
+    padding: 3.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) { 
+  body {
+    // background: red;
+  }
+  .hero-title {
+    font-size: 3rem !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 993px) { 
+  body {
+    // background: blue;
+  }
+  .hero-title {
+    font-size: 5rem !important;
+  }
+}
+
+@media only screen and (max-width: 3440px) and (min-width: 1920px) { 
+  body {
+    // background: brown;
+  }
+  .hero-title-container {
+    width: 50% !important;
+    height: 100vh !important;
+  }
+  .hero-title {
+    font-size: 10rem !important;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1200px) { 
+  body {
+    // background: green;
+  }
+  .hero-title-container {
+    width: 50% !important;
+    height: 100vh !important;
+  }
+  .hero-title {
+    font-size: 7rem !important;
+    // top: -10% !important;
+  }
+}
 
