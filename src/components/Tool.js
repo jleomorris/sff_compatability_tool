@@ -18,6 +18,20 @@ import Col from 'react-bootstrap/Col';
 // import './styles/style.css';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+function compare(a, b) {
+  // Use toUpperCase() to ignore character casing
+  const bandA = a.name.toUpperCase();
+  const bandB = b.name.toUpperCase();
+
+  let comparison = 0;
+  if (bandA > bandB) {
+    comparison = 1;
+  } else if (bandA < bandB) {
+    comparison = -1;
+  }
+  return comparison;
+}
+
 class Tool extends Component {
   constructor(props) {
     super(props);
@@ -55,15 +69,20 @@ class Tool extends Component {
   }
 
   componentDidMount() {
+    const alphabetizedCases = caseData.cases.sort(compare);
+    const alphabetizedCpuCoolers = cpuCoolerData.cpuCoolers.sort(compare);
+    const alphabetizedPsus = psuData.psus.sort(compare);
+    const alphabetizedGpus = gpuData.gpus.sort(compare);
+
     this.setState({
-      cases: caseData.cases,
-      originalCases: caseData.cases,
-      cpuCoolers: cpuCoolerData.cpuCoolers,
-      originalCpuCoolers: cpuCoolerData.cpuCoolers,
-      psus: psuData.psus,
-      originalPsus: psuData.psus,
-      gpus: gpuData.gpus,
-      originalGpus: gpuData.gpus,
+      cases: alphabetizedCases,
+      originalCases: alphabetizedCases,
+      cpuCoolers: alphabetizedCpuCoolers,
+      originalCpuCoolers: alphabetizedCpuCoolers,
+      psus: alphabetizedPsus,
+      originalPsus: alphabetizedPsus,
+      gpus: alphabetizedGpus,
+      originalGpus: alphabetizedGpus,
     })
   }
 
@@ -75,7 +94,21 @@ class Tool extends Component {
     const selectedCases = unselectedCases.map(pcCase => pcCase.name === selectedCaseName ? { ...pcCase, isSelected: true } : pcCase );
 
     // Display cases, reset cpu coolers, psus and gpus to original lists
-    this.setState({ cases: selectedCases, cpuCoolers: this.state.originalCpuCoolers, psus: this.state.originalPsus, gpus: this.state.originalGpus, isCaseSelected: false, selectedCaseName: null, isCpuCoolerSelected: false, selectedCpuCoolerName: null, isPsuSelected: false, selectedPsuName: null, isGpuSelected: false, selectedGpuName: null, isbreakdownContainerReset: false }, () => {
+    this.setState({ 
+      cases: selectedCases,
+      cpuCoolers: this.state.originalCpuCoolers,
+      psus: this.state.originalPsus,
+      gpus: this.state.originalGpus,
+      isCaseSelected: false,
+      selectedCaseName: null,
+      isCpuCoolerSelected: false,
+      selectedCpuCoolerName: null,
+      isPsuSelected: false,
+      selectedPsuName: null,
+      isGpuSelected: false,
+      selectedGpuName: null,
+      isbreakdownContainerReset: false 
+    }, () => {
       // Filter cpu coolers, psus and gpus based on selected case
       const filteredCase = this.state.cases.filter(pcCase => pcCase.name === selectedCaseName)[0];
       const filteredCpuCoolers = this.state.cpuCoolers.filter(cooler => cooler.height <= filteredCase.maxCoolerHeight);
@@ -84,8 +117,6 @@ class Tool extends Component {
       
       // Display filtered cpu coolers, psus and gpus
       this.setState({ cases: selectedCases, cpuCoolers: filteredCpuCoolers, psus: filteredPsus, gpus: filteredGpus, isCaseSelected: true, selectedCase: filteredCase });
-      // this.scrollToCpus();
-      
     })
           
   }
