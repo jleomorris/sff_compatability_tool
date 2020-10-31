@@ -3,42 +3,52 @@
        { 
           "id":"01", 
           "imgUrl":"./img/corsairSF.png",
-          "name": "Corsair_SF600/750", 
+          "name": "Corsair SF600/750", 
+          "description": "These are the best SFX-based PSUs that money can buy. Enthusiasts who don't need that much power will be extremely happy with the company's improved SF600 Platinum. Or, if you want to save some money, check out the older SF600 Gold, which remains in production and is still a great power supply.",
+          "descriptionAuthor": "tomshardware",
           "type": "sff"
        },
 
        { 
          "id":"02", 
          "imgUrl":"./img/Silverstone_ST45SF-V3.png",
-         "name": "Silverstone_ST45SF-V3", 
+         "name": "Silverstone ST45SF-V3", 
+         "description": "A highly affordable SFX unit that offers decent performance and a silent operation under normal conditions, thanks to the 92mm fan that equips it. If you don't have a problem with its native cables and your system's consumption usually is in the 200-300W range, then the ST45SF will fully cover you needs. Besides the affordable price its strong advantages also include the in spec hold-up time and a full protection features set.",
+         "descriptionAuthor": "tomshardware",
          "type": "sff"
       },
 
       { 
          "id":"03", 
          "imgUrl":"./img/EVGA_500B.png",
-         "name": "EVGA_500B", 
+         "name": "EVGA 500B", 
+         "description": "The EVGA 500B isn't a record breaker performance-wise, but it comes at a very nice price and is backed by a three-year warranty. If you don't want to spend much on a mainstream PSU, this is a good choice, though it could offer significantly better performance with a few small fixes.",
+         "descriptionAuthor": "techpowerup",
          "type": "atx"
       },
 
       { 
          "id":"04", 
          "imgUrl":"./img/Node202_psu.png",
-         "name": "Node_202", 
+         "name": "Node 202", 
          "type": "sff"
       },
 
       { 
          "id":"05", 
          "imgUrl":"./img/EVGA_550_G2.png",
-         "name": "EVGA_550/650/750/850_G2", 
+         "name": "EVGA 550/650/750/850 G2", 
+         "description": "Because of the highly efficient platform, the relaxed fan profile, and a long-lasting passive mode, we expect this unit to offer very quiet operation, even under tough conditions. With its three PCIe connectors, the 550 G2 PSU can easily power a midrange system with a single high-end graphics card.",
+         "descriptionAuthor": "tomshardware",
          "type": "atx"
       },
 
       { 
          "id":"05", 
          "imgUrl":"./img/Mini-Box_160XT.png",
-         "name": "Mini-Box_160XT", 
+         "name": "Mini-Box 160XT", 
+         "description": "The picoPSU-160-XT is the toughest plug-in 12V ATX dc-dc power supply. The picoPSU is compatible with an entire range of mini-itx motherboards as well as regular boards. The picoPSU-160-XT provides a cool, silent 160 Watts (200 watt peak) of power for small PC designs using a single 12V power source.",
+         "descriptionAuthor": "mini-box",
          "type": "sff"
       }
 

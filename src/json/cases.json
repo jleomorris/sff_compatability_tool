@@ -1,208 +1,234 @@
 {
   "cases": [ 	
-     { 
-        "id":"01", 
-        "imgUrl":"./img/ncase.png",
-        "name": "Ncase M1", 
-        "maxGpuSlots": 2.5,
-        "maxGpuLength": 322,
-        "psuType": "sff",
-        "maxCoolerHeight": 130,
-        "awards": ["Best Mini-ITX case of 2015 (Hardware_Canucks)"],
-        "isFiltered": false,
-        "isSelected": false
-      }, 
-     { 
-        "id":"01", 
-        "imgUrl":"./img/ncase.png",
-        "name": "Ncase M1 (front IO removed)", 
+    { 
+      "id":"01", 
+      "imgUrl":"./img/ncase.png",
+      "name": "Ncase M1", 
+      "description": "The M1 is a stunningly strong first entry from a new manufacturer, and delivers exactly what it promises with a thoughtful internal layout that wastes no space",
+      "descriptionAuthor": "Linus Tech Tips",
+      "maxGpuSlots": 2.5,
+      "maxGpuLength": 322,
+      "psuType": "sff",
+      "maxCoolerHeight": 130,
+      "awards": ["Best Mini-ITX case of 2015 (Hardware_Canucks)"],
+      "isFiltered": false,
+      "isSelected": false
+    }, 
+    { 
+      "id":"01", 
+      "imgUrl":"./img/ncase.png",
+      "name": "Ncase M1 (front IO removed)", 
+      "description": "The M1 is a stunningly strong first entry from a new manufacturer, and delivers exactly what it promises with a thoughtful internal layout that wastes no space",
+      "descriptionAuthor": "Linus Tech Tips",
+      "maxGpuSlots": 3,
+      "maxGpuLength": 290,
+      "psuType": "sff",
+      "maxCoolerHeight": 130,
+      "awards": ["Best Mini-ITX case of 2015 (Hardware_Canucks)"],
+      "isFiltered": false,
+      "isSelected": false
+    }, 
+    { 
+      "id":"02", 
+      "imgUrl":"./img/ghost_s1.png",
+      "name": "Louqe Ghost S1",
+      "description": "Milled from solid blocks of aluminum, this case offers a level of quality rarely seen in any computer case out there. With a glass blasted deep anodized or cerakoted aluminum exterior the new GHOST S1 Mk3 has a quality that you actually can feel",
+      "descriptionAuthor": "Louqe",
+      "maxGpuSlots": 2,
+      "maxGpuLength": 305,
+      "psuType": "sff",
+      "maxCoolerHeight": 66,
+      "awards": ["Finalist_of_the_European_Hardware_Awards_2019"],
+      "isFiltered": false,
+      "isSelected": false
+    }, 
+    { 
+      "id":"03", 
+      "imgUrl":"./img/dan_case_A4.png",
+      "name": "Dancase A4-SFX",
+      "description": "This case is perfect for SFF (Small Form Factor) enthusiasts, those who need a highly portable system, developers who require a case with a smaller footprint due to limited desk space, and gamers who want a high-end PC experience in their living room",
+      "descriptionAuthor": "dan-cases.com",
+      "maxGpuSlots": 2,
+      "maxGpuLength": 295,
+      "psuType": "sff",
+      "maxCoolerHeight": 48,
+      "isFiltered": false,
+      "isSelected": false
+    },
+    { 
+      "id":"04", 
+      "imgUrl":"./img/kolink1.png",
+      "name": "Kolink Rocket",
+      "description": "This exceptionally compact gaming case not only looks high-end, its low weight and diminutive proportions also make it highly portable and easy to transport. Behind its stylish exterior lies an extensive range of options for installing premium PC hardware due to its clever use of space.",
+      "descriptionAuthor": "Kolink",
+      "maxGpuSlots": 2,
+      "maxGpuLength": 310,
+      "psuType": "sff",
+      "maxCoolerHeight": 54,
+      "isFiltered": false,
+      "isSelected": false
+    },
+    { 
+      "id":"05", 
+      "imgUrl":"./img/cougar_qbx.png",
+      "name": "Cougar QBX",
+      "description": "Cougar managed to include every feature you would usually find in a compact tower chassis: multiple fan locations, liquid-cooling compatibility, a possibility to install an ODD bay, and the flexibility for high-end hardware, with the ability to cool it as well. That said, it is not quite as refined as the aluminum NCASE M1, but only costs a third of the price. At that price point, the QBX is a really awesome chassis with an unbelievably low price tag. So, if you are looking for a Mini-ITX chassis for gaming or a hybrid HTPC system, you will not find anything better at its price point or beyond.",
+      "descriptionAuthor": "techpowerup",
+      "maxGpuSlots": 2.5,
+      "maxGpuLength": 350,
+      "psuType": "sff",
+      "maxCoolerHeight": 105,
+      "isFiltered": false,
+      "isSelected": false
+    },
+    { 
+      "id":"06", 
+      "imgUrl":"./img/rvz01.png",
+      "name": "RVZ01",
+      "description": "Despite weighing just 8.17lbs (3.71kg) with a tiny 14L capacity, the RVZ01 is destined for big things with support for enthusiast gear including a dual-slot GPU that's up to 13 inches (330mm) long - technically leaving enough room for the GeForce GTX Titan. Perhaps equally attractive is the RVZ01's asking price of only $85.",
+      "descriptionAuthor": "Techspot",
+      "maxGpuSlots": 2.5,
+      "maxGpuLength": 240,
+      "psuType": "sff",
+      "maxCoolerHeight": 82,
+      "isFiltered": false,
+      "isSelected": false
+    },
+    { 
+      "id":"07", 
+      "imgUrl":"./img/sg13.png",
+      "name": "SG13",
+      "description": "The SG13 is for offering what it does with a 11.5L capacity and $50 asking price. Small form factor gaming cases don't get any better than the Silverstone Sugo SG13 at the moment and apart from wishing its design was more focused on SFX instead of ATX, we wouldn't change a thing about the SG13.",
+      "descriptionAuthor": "Techspot",
+      "maxGpuSlots": 2,
+      "maxGpuLength": 266,
+      "psuType": "sff",
+      "maxCoolerHeight": 61,
+      "isFiltered": false,
+      "isSelected": false
+    },
+
+    { 
+        "id":"08", 
+        "imgUrl":"./img/cerberus.png",
+        "name": "Cerberus",
+        "description": "At just 18.2L, Cerberus is smaller than nearly all mATX (and many mITX) cases in industry today, yet supports flagship graphics and high-end PC components, making it a potent enclosure for hardware enthusiasts that want a compact and portable computer without compromises on performance.",
+        "descriptionAuthor": "Pcper",
         "maxGpuSlots": 3,
+        "maxGpuLength": 330,
+        "psuType": "sff",
+        "maxCoolerHeight": 142,
+        "isFiltered": false,
+        "isSelected": false
+      },
+
+    { 
+        "id":"09", 
+        "imgUrl":"./img/node202.png",
+        "name": "Node 202",
+        "description": "The Node 202 is a great little chassis in many ways. It looks the part for a living room PC and, once you're inside, is surprisingly easy to work with and not even that bad for cable routing. Despite its size, you can install some powerful hardware inside and have yourself a lean, mean Steam Machine. With or without the PSU, it's also pretty good value, and remember again that the PSU has a handy short cable set.",
+        "descriptionAuthor": "bit-tech",
+        "maxGpuSlots": "2",
+        "maxGpuLength": 310,
+        "psuType": "sff",
+        "maxCoolerHeight": 58,
+        "isFiltered": false,
+        "isSelected": false
+      },
+
+    { 
+        "id":"10", 
+        "imgUrl":"./img/corev1.png",
+        "name": "Core V1",
+        "description": "The Core V1 is designed to be compact but combine excellent expansion capabilities with fantastic cooling performance. This includes CPU cooling support up to 140mm in height, modular side panels allowing you to have the window on whatever side you wish (fantastic) and of course some water cooling support.",
+        "descriptionAuthor": "play3r",
+        "maxGpuSlots": "",
         "maxGpuLength": 290,
-        "psuType": "sff",
-        "maxCoolerHeight": 130,
-        "awards": ["Best Mini-ITX case of 2015 (Hardware_Canucks)"],
+        "psuType": "atx",
+        "maxCoolerHeight": 140,
         "isFiltered": false,
         "isSelected": false
-      }, 
+      },
 
-     { 
-        "id":"02", 
-        "imgUrl":"./img/ghost_s1.png",
-        "name": "Louqe Ghost S1",
+    { 
+        "id":"11", 
+        "imgUrl":"./img/sligersm580.png",
+        "name": "Sliger SM580",
+        "description": "The Sliger SM580 Mini ITX case is in our opinion, the best sandwich style small form factor computer case available. Not only is it made here in the USA, with premium construction and a genius design team but their customer support and quality control are stellar.",
+        "descriptionAuthor": "peformance-computer",
+        "maxGpuSlots": "3",
+        "maxGpuLength": 328,
+        "psuType": "sff",
+        "maxCoolerHeight": 55,
+        "isFiltered": false,
+        "isSelected": false
+      },
+
+    { 
+        "id":"12", 
+        "imgUrl":"./img/Lazer3D-LZ7.png",
+        "name": "Lazer3D LZ7",
+        "description": "Lazer3D has a homerun on its hands with the LZ7 case. It represents one of the most efficient uses of space I have ever encountered. You will be able to fit a very powerful system in a tiny case.",
+        "descriptionAuthor": "tekeverything",
+        "maxGpuSlots": "2",
+        "maxGpuLength": 186,
+        "psuType": "sff",
+        "maxCoolerHeight": 65,
+        "isFiltered": false,
+        "isSelected": false
+      },
+
+    { 
+        "id":"13", 
+        "imgUrl":"./img/s4mini.png",
+        "name": "S4 mini",
+        "description": "The S4 Mini represents something truly unique. It straddles the line between size and power more successfully than any case I have ever seen. The build quality is second to none, as is the design. If you’re looking for a unique and functional mITX case, and you’re a fan of the industrial design the S4 Mini champions, you’ll be hard pressed to find a better one than this.",
+        "descriptionAuthor": "sff.network",
         "maxGpuSlots": 2,
-        "maxGpuLength": 305,
-        "psuType": "sff",
-        "maxCoolerHeight": 66,
-        "awards": ["Finalist_of_the_European_Hardware_Awards_2019"],
+        "maxGpuLength": 215,
+        "psuType": "NanoATX",
+        "maxCoolerHeight": 45,
         "isFiltered": false,
         "isSelected": false
-      }, 
+      },
 
-     { 
-         "id":"03", 
-         "imgUrl":"./img/dan_case_A4.png",
-         "name": "Dancase A4-SFX",
-         "maxGpuSlots": 2,
-         "maxGpuLength": 295,
-         "psuType": "sff",
-         "maxCoolerHeight": 48,
-         "isFiltered": false,
-         "isSelected": false
-        },
+    { 
+        "id":"14", 
+        "imgUrl":"./img/inwin_chopin.png",
+        "name": "Inwin Chopin",
+        "description": "The Chopin is clearly quite niche and there are several significantly cheaper alternatives too. For both an APU-based gaming system or simply a discrete GPU-less HTPC or general-purpose systems though, price aside it's practically perfect. It looks great, is extremely well made, supremely compact and solid and as a bonus, it includes a decent PSU too.",
+        "descriptionAuthor": "bit-tech",
+        "maxGpuSlots": 0,
+        "maxGpuLength": 0,
+        "psuType": "sff",
+        "maxCoolerHeight": 43,
+        "isFiltered": false,
+        "isSelected": false
+      },
 
-      { 
-         "id":"04", 
-         "imgUrl":"./img/kolink1.png",
-         "name": "Kolink Rocket",
-         "maxGpuSlots": 2,
-         "maxGpuLength": 310,
-         "psuType": "sff",
-         "maxCoolerHeight": 54,
-         "isFiltered": false,
-         "isSelected": false
-        },
+    { 
+        "id":"15", 
+        "imgUrl":"./img/Lone_industries_L5.png",
+        "name": "Lone industries L5",
+        "maxGpuSlots": 0,
+        "maxGpuLength": 185,
+        "psuType": "sff",
+        "maxCoolerHeight": 70,
+        "isFiltered": false,
+        "isSelected": false
+      },
 
-      { 
-         "id":"05", 
-         "imgUrl":"./img/cougar_qbx.png",
-         "name": "Cougar QBX",
-         "maxGpuSlots": 2.5,
-         "maxGpuLength": 350,
-         "psuType": "sff",
-         "maxCoolerHeight": 105,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"06", 
-         "imgUrl":"./img/rvz01.png",
-         "name": "RVZ01",
-         "maxGpuSlots": 2.5,
-         "maxGpuLength": 240,
-         "psuType": "sff",
-         "maxCoolerHeight": 82,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"07", 
-         "imgUrl":"./img/sg13.png",
-         "name": "SG13",
-         "maxGpuSlots": 2,
-         "maxGpuLength": 266,
-         "psuType": "sff",
-         "maxCoolerHeight": 61,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"08", 
-         "imgUrl":"./img/cerberus.png",
-         "name": "Cerberus",
-         "maxGpuSlots": "",
-         "maxGpuLength": 330,
-         "psuType": "sff",
-         "maxCoolerHeight": 142,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"09", 
-         "imgUrl":"./img/node202.png",
-         "name": "Node 202",
-         "maxGpuSlots": "",
-         "maxGpuLength": 310,
-         "psuType": "sff",
-         "maxCoolerHeight": 58,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"10", 
-         "imgUrl":"./img/corev1.png",
-         "name": "Core V1",
-         "maxGpuSlots": "",
-         "maxGpuLength": 290,
-         "psuType": "atx",
-         "maxCoolerHeight": 140,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"11", 
-         "imgUrl":"./img/sligersm580.png",
-         "name": "Sliger SM580",
-         "maxGpuSlots": "3",
-         "maxGpuLength": 328,
-         "psuType": "sff",
-         "maxCoolerHeight": 55,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"12", 
-         "imgUrl":"./img/Lazer3D-LZ7.png",
-         "name": "Lazer3D LZ7",
-         "maxGpuSlots": "2",
-         "maxGpuLength": 186,
-         "psuType": "sff",
-         "maxCoolerHeight": 65,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"13", 
-         "imgUrl":"./img/s4mini.png",
-         "name": "S4 mini",
-         "maxGpuSlots": 2,
-         "maxGpuLength": 215,
-         "psuType": "NanoATX",
-         "maxCoolerHeight": 45,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"14", 
-         "imgUrl":"./img/inwin_chopin.png",
-         "name": "Inwin Chopin",
-         "maxGpuSlots": 0,
-         "maxGpuLength": 0,
-         "psuType": "sff",
-         "maxCoolerHeight": 43,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"15", 
-         "imgUrl":"./img/Lone_industries_L5.png",
-         "name": "Lone industries L5",
-         "maxGpuSlots": 2,
-         "maxGpuLength": 185,
-         "psuType": "sff",
-         "maxCoolerHeight": 70,
-         "isFiltered": false,
-         "isSelected": false
-        },
-
-      { 
-         "id":"16", 
-         "imgUrl":"./img/j-hack_pure_MK2.png",
-         "name": "J-hack pure MK2",
-         "maxGpuSlots": 2,
-         "maxGpuLength": 180,
-         "psuType": "sff",
-         "maxCoolerHeight": 47
-      }
-   
-  ]   
+    { 
+        "id":"16", 
+        "imgUrl":"./img/j-hack_pure_MK2.png",
+        "name": "J-hack pure MK2",
+        "description": "The J-Hack Pure Mk2 is currently the smallest game case available. If this ultra small form factor is important to you, this is a fantastic case.",
+        "descriptionAuthor": "tekeverything",
+        "maxGpuSlots": 2,
+        "maxGpuLength": 180,
+        "psuType": "sff",
+        "maxCoolerHeight": 47
+    }
+  
+]   
 }
