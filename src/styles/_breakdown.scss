@@ -61,7 +61,7 @@ $barbarian: #EC9B3B;
 
     .clash-card {
       background: white;
-      width: 300px;
+      width: 250px;
       display: inline-block;
       margin: auto;
       border-radius: $border-radius-size + 5;
@@ -106,13 +106,26 @@ $barbarian: #EC9B3B;
       color: black;
       font-weight: 900;
       // margin-bottom: 5px;
-      word-break: break-all;
+      word-break: break-word;
       margin: 1rem;
     }
     
     .clash-card__unit-description {
       padding: 20px;
       margin-bottom: 10px;  
+
+      .case-quote {
+        // color: red;
+        font-size: 1rem;
+      }
+      
+      .case-quote-author {
+        // color: purple;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: bold;
+      }
+
     }
     
     .clash-card__unit-stats--barbarian {

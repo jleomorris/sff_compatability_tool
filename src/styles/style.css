@@ -323,7 +323,6 @@ a {
 .case-container p {
   font-weight: 800;
   text-transform: uppercase;
-  word-break: break-all;
   text-align: center;
   margin: 1rem;
   font-size: 1rem;
@@ -407,7 +406,6 @@ a {
 .cpu-cooler-container p {
   font-weight: 800;
   text-transform: uppercase;
-  word-break: break-all;
   text-align: center;
   margin: 1rem;
   font-size: 1rem;
@@ -502,7 +500,6 @@ a {
 .psu-container p {
   font-weight: 800;
   text-transform: uppercase;
-  word-break: break-all;
   text-align: center;
   margin: 1rem;
   font-size: 1rem;
@@ -597,7 +594,6 @@ a {
 .gpu-container p {
   font-weight: 800;
   text-transform: uppercase;
-  word-break: break-all;
   text-align: center;
   margin: 1rem;
   font-size: 1rem;
@@ -740,7 +736,7 @@ a {
 
 .breakdown-container .wrapper .clash-card {
   background: white;
-  width: 300px;
+  width: 250px;
   display: inline-block;
   margin: auto;
   border-radius: 19px;
@@ -785,13 +781,23 @@ a {
   font-size: 26px;
   color: black;
   font-weight: 900;
-  word-break: break-all;
+  word-break: break-word;
   margin: 1rem;
 }
 
 .breakdown-container .wrapper .clash-card__unit-description {
   padding: 20px;
   margin-bottom: 10px;
+}
+
+.breakdown-container .wrapper .clash-card__unit-description .case-quote {
+  font-size: 1rem;
+}
+
+.breakdown-container .wrapper .clash-card__unit-description .case-quote-author {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .breakdown-container .wrapper .clash-card__unit-stats--barbarian {
@@ -1042,21 +1048,21 @@ footer .footer-content .fa-phone-alt, footer .footer-content .fa-envelope {
 
 @media only screen and (max-width: 3440px) and (min-width: 1920px) {
   .hero-title-container {
-    width: 50% !important;
+    width: 30% !important;
     height: 100vh !important;
   }
   .hero-title {
-    font-size: 10rem !important;
+    font-size: 9rem !important;
   }
 }
 
 @media only screen and (max-width: 1920px) and (min-width: 1200px) {
   .hero-title-container {
-    width: 50% !important;
+    width: 55% !important;
     height: 100vh !important;
   }
   .hero-title {
-    font-size: 7rem !important;
+    font-size: 7.5rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
