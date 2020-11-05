@@ -1,7 +1,88 @@
 {
   "cases": [ 	
     { 
-      "id":"01", 
+      "imgUrl":"./img/K39.png",
+      "name": "K39", 
+      "maxGpuSlots": 2,
+      "maxGpuLength": 180,
+      "psuType": "sff",
+      "maxCoolerHeight": 47,
+      "isFiltered": false,
+      "isSelected": false
+    }, 
+    { 
+      "imgUrl":"./img/UMX3.png",
+      "name": "Jonsbo UMX3", 
+      "description": "Jonsbo’s UMX3 is the third generation of the UMX series. It is designed to adapt Micro ATX motherboards with its key breakthrough being able to support high-end hardware while remaining a very compact chassis. With its ingenious stack-based concept in such a small space the UMX3 supports high-end dual slots graphics card with a length of no longer than 320mm and CPU coolers with height not exceeding 163mm.",
+      "descriptionAuthor": "QuietPC",
+      "maxGpuSlots": 2,
+      "maxGpuLength": 320,
+      "psuType": "atx",
+      "maxCoolerHeight": 163,
+      "isFiltered": false,
+      "isSelected": false
+    }, 
+    { 
+      "imgUrl":"./img/UMX1.png",
+      "name": "Jonsbo UMX1", 
+      "description": "The UMX1 offers an outstanding and innovative design. Only the highest quality components are used in order to offer a truly impressive case. This compact Mini-ITX case combines a steel chassis for maximum stability with an extravagant exterior designed in brushed aluminium. The design of the sleek aluminium casing is both elegant and functional.",
+      "descriptionAuthor": "QuietPC",
+      "maxGpuSlots": 2,
+      "maxGpuLength": 270,
+      "psuType": "atx",
+      "maxCoolerHeight": 130,
+      "isFiltered": false,
+      "isSelected": false
+    }, 
+    { 
+      "imgUrl":"./img/Jonsbo_A4.png",
+      "name": "Jonsbo A4", 
+      "description": "The Jonsbo A4 series is a compact MINI-ITX case range made using aluminum and tempered glass materials. The innovative dual-chamber design offers plenty of room for powerful gaming systems and proves that high-end and ultra-compact can be one and the same.",
+      "descriptionAuthor": "Eteknix",
+      "maxGpuSlots": 2,
+      "maxGpuLength": 325,
+      "psuType": "sff",
+      "maxCoolerHeight": 71,
+      "isFiltered": false,
+      "isSelected": false
+    }, 
+    { 
+      "imgUrl":"./img/NZXT_H1.png",
+      "name": "NZXT H1", 
+      "description": "Simplistic, monolithic design and the capability to spec out an surprisingly powerful PC (gaming, workstation or otherwise) makes the NZXT H1 a solid choice for someone seeking full desktop potential with a very modest footprint.",
+      "descriptionAuthor": "Toms hardware",
+      "maxGpuSlots": 2.5,
+      "maxGpuLength": 305,
+      "psuType": "sff",
+      "maxCoolerHeight": 140,
+      "isFiltered": false,
+      "isSelected": false
+    }, 
+    { 
+      "imgUrl":"./img/Raijintek_Metis_EVO_ALS.png",
+      "name": "Raijintek Metis EVO ALS", 
+      "description": "If you want to build a Mini-ITX system, the new METIS EVO series of cases from Raijintek is the perfect choice. The case shows a very good processing. Sophisticated and tidy, it presents the user with a compact performance package, both when empty and when installed.",
+      "descriptionAuthor": "Basic-tutorials",
+      "maxGpuSlots": 2,
+      "maxGpuLength": 280,
+      "psuType": "atx",
+      "maxCoolerHeight": 135,
+      "isFiltered": false,
+      "isSelected": false
+    }, 
+    { 
+      "imgUrl":"./img/Cooler_Master MasterBox_NR200P.png",
+      "name": "Cooler Master NR200P", 
+      "description": "This impressive Mini-ITX case packs in most of the features you associate with a regular ATX tower. You can install a number of storage drives, a 240mm or 280mm radiator and a triple slot graphics card in either the horizontal or vertical position.",
+      "descriptionAuthor": "Kitguru",
+      "maxGpuSlots": 3,
+      "maxGpuLength": 330,
+      "psuType": "sff",
+      "maxCoolerHeight": 155,
+      "isFiltered": false,
+      "isSelected": false
+    }, 
+    { 
       "imgUrl":"./img/ncase.png",
       "name": "Ncase M1", 
       "description": "The M1 is a stunningly strong first entry from a new manufacturer, and delivers exactly what it promises with a thoughtful internal layout that wastes no space",
@@ -10,12 +91,10 @@
       "maxGpuLength": 322,
       "psuType": "sff",
       "maxCoolerHeight": 130,
-      "awards": ["Best Mini-ITX case of 2015 (Hardware_Canucks)"],
       "isFiltered": false,
       "isSelected": false
     }, 
     { 
-      "id":"01", 
       "imgUrl":"./img/ncase.png",
       "name": "Ncase M1 (front IO removed)", 
       "description": "The M1 is a stunningly strong first entry from a new manufacturer, and delivers exactly what it promises with a thoughtful internal layout that wastes no space",
@@ -24,12 +103,10 @@
       "maxGpuLength": 290,
       "psuType": "sff",
       "maxCoolerHeight": 130,
-      "awards": ["Best Mini-ITX case of 2015 (Hardware_Canucks)"],
       "isFiltered": false,
       "isSelected": false
     }, 
     { 
-      "id":"02", 
       "imgUrl":"./img/ghost_s1.png",
       "name": "Louqe Ghost S1",
       "description": "Milled from solid blocks of aluminum, this case offers a level of quality rarely seen in any computer case out there. With a glass blasted deep anodized or cerakoted aluminum exterior the new GHOST S1 Mk3 has a quality that you actually can feel",
@@ -38,12 +115,10 @@
       "maxGpuLength": 305,
       "psuType": "sff",
       "maxCoolerHeight": 66,
-      "awards": ["Finalist_of_the_European_Hardware_Awards_2019"],
       "isFiltered": false,
       "isSelected": false
     }, 
     { 
-      "id":"03", 
       "imgUrl":"./img/dan_case_A4.png",
       "name": "Dancase A4-SFX",
       "description": "This case is perfect for SFF (Small Form Factor) enthusiasts, those who need a highly portable system, developers who require a case with a smaller footprint due to limited desk space, and gamers who want a high-end PC experience in their living room",
@@ -56,7 +131,6 @@
       "isSelected": false
     },
     { 
-      "id":"04", 
       "imgUrl":"./img/kolink1.png",
       "name": "Kolink Rocket",
       "description": "This exceptionally compact gaming case not only looks high-end, its low weight and diminutive proportions also make it highly portable and easy to transport. Behind its stylish exterior lies an extensive range of options for installing premium PC hardware due to its clever use of space.",
@@ -69,7 +143,6 @@
       "isSelected": false
     },
     { 
-      "id":"05", 
       "imgUrl":"./img/cougar_qbx.png",
       "name": "Cougar QBX",
       "description": "Cougar managed to include every feature you would usually find in a compact tower chassis: multiple fan locations, liquid-cooling compatibility, a possibility to install an ODD bay, and the flexibility for high-end hardware, with the ability to cool it as well. That said, it is not quite as refined as the aluminum NCASE M1, but only costs a third of the price. At that price point, the QBX is a really awesome chassis with an unbelievably low price tag. So, if you are looking for a Mini-ITX chassis for gaming or a hybrid HTPC system, you will not find anything better at its price point or beyond.",
@@ -82,7 +155,6 @@
       "isSelected": false
     },
     { 
-      "id":"06", 
       "imgUrl":"./img/rvz01.png",
       "name": "RVZ01",
       "description": "Despite weighing just 8.17lbs (3.71kg) with a tiny 14L capacity, the RVZ01 is destined for big things with support for enthusiast gear including a dual-slot GPU that's up to 13 inches (330mm) long - technically leaving enough room for the GeForce GTX Titan. Perhaps equally attractive is the RVZ01's asking price of only $85.",
@@ -95,7 +167,6 @@
       "isSelected": false
     },
     { 
-      "id":"07", 
       "imgUrl":"./img/sg13.png",
       "name": "SG13",
       "description": "The SG13 is for offering what it does with a 11.5L capacity and $50 asking price. Small form factor gaming cases don't get any better than the Silverstone Sugo SG13 at the moment and apart from wishing its design was more focused on SFX instead of ATX, we wouldn't change a thing about the SG13.",
@@ -109,7 +180,6 @@
     },
 
     { 
-        "id":"08", 
         "imgUrl":"./img/cerberus.png",
         "name": "Cerberus",
         "description": "At just 18.2L, Cerberus is smaller than nearly all mATX (and many mITX) cases in industry today, yet supports flagship graphics and high-end PC components, making it a potent enclosure for hardware enthusiasts that want a compact and portable computer without compromises on performance.",
@@ -123,7 +193,6 @@
       },
 
     { 
-        "id":"09", 
         "imgUrl":"./img/node202.png",
         "name": "Node 202",
         "description": "The Node 202 is a great little chassis in many ways. It looks the part for a living room PC and, once you're inside, is surprisingly easy to work with and not even that bad for cable routing. Despite its size, you can install some powerful hardware inside and have yourself a lean, mean Steam Machine. With or without the PSU, it's also pretty good value, and remember again that the PSU has a handy short cable set.",
@@ -137,7 +206,6 @@
       },
 
     { 
-        "id":"10", 
         "imgUrl":"./img/corev1.png",
         "name": "Core V1",
         "description": "The Core V1 is designed to be compact but combine excellent expansion capabilities with fantastic cooling performance. This includes CPU cooling support up to 140mm in height, modular side panels allowing you to have the window on whatever side you wish (fantastic) and of course some water cooling support.",
@@ -151,7 +219,6 @@
       },
 
     { 
-        "id":"11", 
         "imgUrl":"./img/sligersm580.png",
         "name": "Sliger SM580",
         "description": "The Sliger SM580 Mini ITX case is in our opinion, the best sandwich style small form factor computer case available. Not only is it made here in the USA, with premium construction and a genius design team but their customer support and quality control are stellar.",
@@ -165,7 +232,6 @@
       },
 
     { 
-        "id":"12", 
         "imgUrl":"./img/Lazer3D-LZ7.png",
         "name": "Lazer3D LZ7",
         "description": "Lazer3D has a homerun on its hands with the LZ7 case. It represents one of the most efficient uses of space I have ever encountered. You will be able to fit a very powerful system in a tiny case.",
@@ -179,7 +245,6 @@
       },
 
     { 
-        "id":"13", 
         "imgUrl":"./img/s4mini.png",
         "name": "S4 mini",
         "description": "The S4 Mini represents something truly unique. It straddles the line between size and power more successfully than any case I have ever seen. The build quality is second to none, as is the design. If you’re looking for a unique and functional mITX case, and you’re a fan of the industrial design the S4 Mini champions, you’ll be hard pressed to find a better one than this.",
@@ -193,7 +258,6 @@
       },
 
     { 
-        "id":"14", 
         "imgUrl":"./img/inwin_chopin.png",
         "name": "Inwin Chopin",
         "description": "The Chopin is clearly quite niche and there are several significantly cheaper alternatives too. For both an APU-based gaming system or simply a discrete GPU-less HTPC or general-purpose systems though, price aside it's practically perfect. It looks great, is extremely well made, supremely compact and solid and as a bonus, it includes a decent PSU too.",
@@ -207,7 +271,6 @@
       },
 
     { 
-        "id":"15", 
         "imgUrl":"./img/Lone_industries_L5.png",
         "name": "Lone industries L5",
         "maxGpuSlots": 0,
@@ -219,7 +282,6 @@
       },
 
     { 
-        "id":"16", 
         "imgUrl":"./img/j-hack_pure_MK2.png",
         "name": "J-hack pure MK2",
         "description": "The J-Hack Pure Mk2 is currently the smallest game case available. If this ultra small form factor is important to you, this is a fantastic case.",

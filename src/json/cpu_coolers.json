@@ -1,76 +1,74 @@
 {
-    "cpuCoolers": [ 	
-      { 
-      "id":"01", 
+  "cpuCoolers": [ 	
+    { 
       "imgUrl":"./img/noctua_nh_u9s.png",
       "name": "Noctua NHU9S", 
       "description": "The NH-U9S performs great with just one fan and it is whisper quiet just what you would expect from a Noctua product. It offers great compatibility with RAM with tall heatsinks and video cards. The NH-U9S is an excellent cooler that does exactly what is supposed to do.",
       "descriptionAuthor": "relaxedtech",
       "height": 125
-      },
-      { 
-      "id":"02", 
+    },
+    { 
+      "imgUrl":"./img/Scythe_Fuma_2.png",
+      "name": "Scythe Fuma 2", 
+      "description": "The Fuma 2 is a sleek looking dual-tower design that delivers decent performance with almost no noise involved! Considering cost, performance, and all other things, it is hard to pass a cooler such as this by.",
+      "descriptionAuthor": "Tweaktown",
+      "height": 154.5
+    },
+    { 
       "imgUrl":"./img/scythe_choten.png",
       "name": "Scythe choten", 
       "description": "The Scythe Choten TUF Gaming Alliance fits neatly into the budget gaming builder’s toolbox for entry level and mid-tier CPU cooling while providing the aggressive charm of the TUF D.N.A. in a beautiful downdraft cooling tower design.",
       "descriptionAuthor": "tomshardware",
       "height": 120
-      },
-      { 
-      "id":"03", 
+    },
+    { 
       "imgUrl":"./img/noctua_nh_c14s.png",
       "name": "Noctua NHC14S", 
       "description": "The NH-C14S performs great with just one fan and it is whisper quiet just what you would expect from a Noctua product. It offers great compatibility with RAM with tall heatsinks and video cards. The NH-C14S is an excellent cooler that does exactly what is supposed to do.",
       "descriptionAuthor": "relaxedtech",
       "height": 115       
-      },
-      { 
-      "id":"04", 
+    },
+    { 
       "imgUrl":"./img/noctua_nh_l9x65.png",
       "name": "Noctua NHL9X65", 
       "description": "There’s a lot to love about this cooler, and while I admit that it’s certainly not suitable for everyone’s needs, there’s a big market for very small coolers and the NH-L9x65 is one of the best in its class by a rather large margin. Capable of cooling a powerful CPU including the high-end Intel 2011 range in such a small form factor makes it an ideal choice for workstation and server deployment, or a mid-to-high end CPU with a modest overclock.",
       "descriptionAuthor": "eteknix",
       "height": 65       
-      },
-      { 
-      "id":"05", 
+    },
+    { 
       "imgUrl":"./img/noctua_nhl_12.png",
       "name": "Noctua NHL12", 
       "description": "For a Mini-ITX CPU cooler, the Noctua NH-L12 is somewhat of a luxury product. But like any luxury item, this heat sink comes with all the bells and whistles. While the price might be high compared to competing coolers, the NH-L12’s quality, configurability and extras make this cooler a value nonetheless.",
       "descriptionAuthor": "tomshardware",
       "height": 66
-      },
-      { 
-      "id":"06", 
+    },
+    { 
       "imgUrl":"./img/nh_l9a_am4_chromax_black.png",
       "name": "Noctua NH-L9a", 
       "description": "The NH-L9a-AM4 is a highly compact, quiet low-profile cooler designed for use in small form factor cases and HTPC environments. While it provides first-rate performance in its class, it is not suitable for overclocking and is only recommended for CPUs/APUs with up to 95W TDP (Thermal Design Power)",
       "descriptionAuthor": "pctechreviews",
       "height": 37
-      },
-      { 
-      "id":"07", 
+    },
+    { 
       "imgUrl":"./img/ID_Cooling_IS-60.png",
       "name": "ID Cooling IS-60", 
       "description": "ID-Cooling addresses the unique needs of m-ITX builds with the IS series coolers and the IS-60 is a good option. Performance-wise, it's on par with single-tower coolers. This cooler also targets silence, although I believe the potential of the cooler is sacraficed in terms of heat dissipation, in favour of a quieter unit.",
       "descriptionAuthor": "proclockers",
       "height": 55
-      },
-      { 
-      "id":"08", 
+    },
+    { 
       "imgUrl": "./img/Celsius-S24.png",
       "name": "Celcius S24", 
       "description": " The Celsius S24 offers new features like the S36 but in a more accommodating form factor. Not all cases can fit a 360 mm radiator, which makes the S24 and its standard 240 mm radiator a more attractive option as almost every case on the market can fit a 240 mm liquid cooler. Speaking of memory and GPU clearance - the Celsius 24 is a good fit for just about any system, including mini-ITX.",
       "descriptionAuthor": "techpowerup",
       "height": 66
-      },
-      { 
-      "id":"09", 
+    },
+    { 
       "imgUrl":"./img/black_ridge.png",
       "name": "Alpenfohn black ridge", 
       "description": "The Alpenföhn Black Ridge is a good CPU cooler, that is designed from the start, to work with small motherboards and enclosures, such as the DAN cases. The performance is good when taken into consideration the side of the heatsink and the fan used from the factory. However, the Black Ridge has the same limitation as other small CPU coolers, there is not enough cooling surface area to dissipate all the heat. This means that high TDP CPUs such as the Intel i9 9900K are not suitable for overclocking with the Black Ridge.",
       "descriptionAuthor": "tech-legend",
       "height": 47
-      }
+    }
     ]   
   }
