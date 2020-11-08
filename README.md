@@ -1,5 +1,8 @@
 # sff_compatability_tool
 
+## Links
+* https://jleomorris.github.io/sff_compatability_tool/#tool
+
 ## Description
 <p>This app is a compatability tool for small form factor (SFF) PC parts. It was developed using create-react-app and class components. For styling SCSS is used.
 Click a PC case and compatible CPU coolers, GPUs and PSUs will remain visible, incompatible ones will be hidden. You can also hover over an eye icon and compatible cases for the part will be highlighted. Once you've selected a case, CPU cooler, PSU and GPU a breakdown will be displayed showing further specification.</p>
