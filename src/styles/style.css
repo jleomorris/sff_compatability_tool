@@ -136,7 +136,7 @@ body {
   padding-top: 2rem;
   position: relative;
   padding-bottom: 150px;
-  min-height: 1000px;
+  min-height: 1200px;
 }
 
 .main-container h2 {
@@ -711,10 +711,10 @@ a {
 }
 
 .breakdown-container .wrapper .fa-undo-alt {
-  font-size: 6rem;
+  font-size: 5rem;
   position: absolute;
-  top: 90px;
-  right: 20px;
+  top: 20px;
+  right: 90px;
 }
 
 .breakdown-container .wrapper .fa-undo-alt:hover {
@@ -757,7 +757,12 @@ a {
 }
 
 .breakdown-container .wrapper .clash-card__image--barbarian {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");
+  background: #8e9eab;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#eef2f3), to(#8e9eab));
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .breakdown-container .wrapper .clash-card__image--barbarian img {
@@ -1048,7 +1053,7 @@ footer .footer-content .fa-phone-alt, footer .footer-content .fa-envelope {
 
 @media only screen and (max-width: 3440px) and (min-width: 1920px) {
   .hero-title-container {
-    width: 30% !important;
+    width: 40% !important;
     height: 100vh !important;
   }
   .hero-title {
