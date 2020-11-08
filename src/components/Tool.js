@@ -8,6 +8,7 @@ import caseData from '../json/cases.json';
 import cpuCoolerData from '../json/cpu_coolers.json';
 import psuData from '../json/psus.json';
 import gpuData from '../json/gpus.json';
+import BreakdownContainer from './BreakdownContainer';
 import BreakdownGallery from './BreakdownGallery';
 import BreakdownPrompt from './BreakdownPrompt'; 
 import Container from 'react-bootstrap/Container';
@@ -232,7 +233,6 @@ class Tool extends Component {
   handlePsuEyeHover(e) {
     const highlightPsus = (selectedPsuName) => {
       const filteredPsu = this.state.psus.filter(psu => psu.name === selectedPsuName)[0];
-      // debugger;
       const compatibleCases = this.state.cases.map(pcCase => pcCase.psuType === filteredPsu.type ? { ...pcCase, isFiltered: !pcCase.isFiltered } : pcCase );
       
       this.setState( {cases: compatibleCases} )
@@ -286,30 +286,10 @@ class Tool extends Component {
   // }
 
   render() {
-    const breakdownGallery = (
-      <>
-        <BreakdownGallery 
-          pcCase={this.state.selectedCase} 
-          cpuCooler={this.state.selectedCpuCooler} 
-          psu={this.state.selectedPsu} 
-          gpu={this.state.selectedGpu}
-          handleExitClick={this.resetAll}
-          handleBackClick={this.handleBackClick}
-        />
-      </>
-    );
-
-    const breakdownContainer = (
-      <div ref={(ref) => { this.myRef[3] = ref }} className="breakdown-container">
-        {this.state.isCaseSelected && this.state.isCpuCoolerSelected && this.state.isPsuSelected && this.state.isGpuSelected ? breakdownGallery : ''}
-      </div>
-    );
-
     return (
           <>
             <div className="tool-wave-container">
-              {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="##36003aa1" fill-opacity="1" d="M0,288L48,250.7C96,213,192,139,288,96C384,53,480,43,576,69.3C672,96,768,160,864,192C960,224,1056,224,1152,197.3C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> */}
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#36003aa1" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,160C640,149,800,75,960,48C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#36003aa1" fillOpacity="1" d="M0,64L80,90.7C160,117,320,171,480,160C640,149,800,75,960,48C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
             </div>
 
             <Container fluid className="p-0">
@@ -346,7 +326,26 @@ class Tool extends Component {
                 <GpuGallery gpus={this.state.gpus} handleGpuClick={this.handleGpuClick} handleGpuEyeHover={this.handleGpuEyeHover} handleGpuEyeLeave={this.resetCaseTiles} handleCheckClick={this.handleCheckClick} />
               </div>
 
-              {this.state.isCaseSelected && this.state.isCpuCoolerSelected && this.state.isPsuSelected && this.state.isGpuSelected && !this.state.isbreakdownContainerReset ? breakdownContainer : ''}
+              {this.state.isCaseSelected && 
+                this.state.isCpuCoolerSelected && 
+                this.state.isPsuSelected && 
+                this.state.isGpuSelected && 
+                !this.state.isbreakdownContainerReset 
+                ? <BreakdownContainer 
+                    uniqueRef={(ref) => { this.myRef[3] = ref }} 
+                    isCaseSelected={this.state.isCaseSelected} 
+                    isCpuCoolerSelected={this.state.isCpuCoolerSelected}
+                    isPsuSelected={this.state.isPsuSelected}
+                    isGpuSelected={this.state.isGpuSelected}
+                    pcCase={this.state.selectedCase} 
+                    cpuCooler={this.state.selectedCpuCooler} 
+                    psu={this.state.selectedPsu} 
+                    gpu={this.state.selectedGpu}
+                    handleExitClick={this.resetAll}
+                    handleBackClick={this.handleBackClick} 
+                    /> 
+                : ''
+              }
             </div>
 
           </>
