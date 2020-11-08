@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer>
 
-      <div class="footer-content">
+      <div className="footer-content">
         <h1>&copy; James Morris 2020</h1>
         {/* <p>
         <FontAwesomeIcon icon={faPhoneAlt}/>
@@ -30,17 +30,17 @@ export default function Footer() {
         </li>
         <li>
           <a target="_blank" href="https://github.com/jleomorris">
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </a>
         </li>
         <li>
           <a target="_blank" href=".\CV_2020.pdf">
-            <i class="far fa-file"></i>
+            <i className="far fa-file"></i>
           </a>
         </li>
         <li>
           <a target="_blank" href="https://www.linkedin.com/in/james-morris-62a66b166/">
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </a>
         </li>
       </ul>
