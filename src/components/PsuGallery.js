@@ -1,7 +1,7 @@
 import React from 'react';
 import PsuTile from './PsuTile';
 
-export default function PsuGallery({ psus, handlePsuClick, handlePsuEyeHover, handlePsuEyeLeave, handleCheckClick }) {
+function PsuGallery({ psus, handlePsuClick, handlePsuEyeHover, handlePsuEyeLeave, handleCheckClick }) {
   return (
     psus.map(psu => {
       return <PsuTile
@@ -17,3 +17,5 @@ export default function PsuGallery({ psus, handlePsuClick, handlePsuEyeHover, ha
     })
   )
 }
+
+export default PsuGallery;

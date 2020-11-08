@@ -4,7 +4,7 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-export default function CaseTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots, psuType, award, handleCaseClick, isFiltered, isSelected, handleCheckClick}) {
+function CaseTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots, psuType, award, handleCaseClick, isFiltered, isSelected, handleCheckClick}) {
   return (
     <>
     <div className="case-container-item">
@@ -19,3 +19,5 @@ export default function CaseTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLeng
     </>
   )
 }
+
+export default CaseTile;

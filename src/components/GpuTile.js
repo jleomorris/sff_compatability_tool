@@ -5,7 +5,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 
-export default function GpuTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots, psuType, award, handleGpuClick, handleGpuEyeHover, handleGpuEyeLeave, handleCheckClick, isSelected }) {
+function GpuTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots, psuType, award, handleGpuClick, handleGpuEyeHover, handleGpuEyeLeave, handleCheckClick, isSelected }) {
   function handleClick(e) {
     handleGpuClick(e);
   }
@@ -24,3 +24,5 @@ export default function GpuTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLengt
     </>
   )
 }
+
+export default GpuTile;

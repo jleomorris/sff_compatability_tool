@@ -1,7 +1,7 @@
 import React from 'react';
 import CaseTile from './CaseTile';
 
-export default function CaseGallery({ cases, handleCaseClick, handleCheckClick }) {
+function CaseGallery({ cases, handleCaseClick, handleCheckClick }) {
   return (
     cases.map(PcCase => {
       return <CaseTile 
@@ -22,3 +22,5 @@ export default function CaseGallery({ cases, handleCaseClick, handleCheckClick }
     })
   )
 }
+
+export default CaseGallery;

@@ -1,7 +1,7 @@
 import React from 'react';
 import GpuTile from './GpuTile';
 
-export default function GpuGallery({ gpus, handleGpuClick, handleGpuEyeHover, handleGpuEyeLeave, handleCheckClick}) {
+function GpuGallery({ gpus, handleGpuClick, handleGpuEyeHover, handleGpuEyeLeave, handleCheckClick }) {
   return (
     gpus.map(gpu => {
       return <GpuTile
@@ -17,3 +17,5 @@ export default function GpuGallery({ gpus, handleGpuClick, handleGpuEyeHover, ha
     })
   )
 }
+
+export default GpuGallery;

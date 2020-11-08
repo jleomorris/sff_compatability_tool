@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-export default function BreakdownPrompt({ pcCase, cpuCooler, psu, gpu  }) {
+function BreakdownPrompt({ pcCase, cpuCooler, psu, gpu  }) {
   return (
     <>
         <div id="breakdown-prompt-container">
@@ -12,3 +12,5 @@ export default function BreakdownPrompt({ pcCase, cpuCooler, psu, gpu  }) {
       </>
   )
 }
+
+export default BreakdownPrompt;

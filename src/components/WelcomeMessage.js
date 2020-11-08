@@ -8,7 +8,7 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import Col from 'react-bootstrap/Col';
 
 
-export default function WelcomeMessage() {
+function WelcomeMessage() {
   return (
     <>
     <div className="hero-title-container">
@@ -65,3 +65,5 @@ export default function WelcomeMessage() {
     </>
   )
 }
+
+export default WelcomeMessage;

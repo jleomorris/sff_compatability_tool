@@ -5,7 +5,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 
-export default function PsuTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots, psuType, award, handlePsuClick, handlePsuEyeHover, handlePsuEyeLeave, isSelected, handleCheckClick}) {
+function PsuTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots, psuType, award, handlePsuClick, handlePsuEyeHover, handlePsuEyeLeave, isSelected, handleCheckClick}) {
   return (
     <>
     <div className="psu-container-item">
@@ -21,3 +21,5 @@ export default function PsuTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLengt
     </>
   )
 }
+
+export default PsuTile;

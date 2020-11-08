@@ -1,7 +1,7 @@
 import React from 'react';
 import CpuCoolerTile from './CpuCoolerTile';
 
-export default function CpuCoolerGallery({ cpuCoolers, handleCpuClick, handleCpuEyeHover, handleCpuEyeLeave, handleCheckClick }) {
+function CpuCoolerGallery({ cpuCoolers, handleCpuClick, handleCpuEyeHover, handleCpuEyeLeave, handleCheckClick }) {
   return (
     cpuCoolers.map(cpuCooler => {
       return <CpuCoolerTile
@@ -17,3 +17,5 @@ export default function CpuCoolerGallery({ cpuCoolers, handleCpuClick, handleCpu
     })
   )
 }
+
+export default CpuCoolerGallery;

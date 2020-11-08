@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 
 
-export default function Footer() {
+function Footer() {
   return (
     <footer>
 
@@ -48,3 +48,5 @@ export default function Footer() {
   </footer>
   )
 }
+
+export default Footer;

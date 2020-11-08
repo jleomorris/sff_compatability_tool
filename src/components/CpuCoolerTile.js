@@ -4,7 +4,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
-export default function CpuCoolerTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots, psuType, award, handleCpuClick, handleCpuEyeHover, handleCpuEyeLeave, isSelected, handleCheckClick }) {
+function CpuCoolerTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots, psuType, award, handleCpuClick, handleCpuEyeHover, handleCpuEyeLeave, isSelected, handleCheckClick }) {
   return (
     <>
     <div className="cpu-cooler-container-item">
@@ -20,3 +20,5 @@ export default function CpuCoolerTile({ id, name, imgUrl, maxCoolerHeight, maxGp
     </>
   )
 }
+
+export default CpuCoolerTile;
