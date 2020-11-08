@@ -31,7 +31,7 @@
       { 
          "imgUrl":"./img/Node202_psu.png",
          "name": "Node 202", 
-         "type": "sff"
+         "type": "node202"
       },
 
       { 
@@ -47,7 +47,7 @@
          "name": "Mini-Box 160XT", 
          "description": "The picoPSU-160-XT is the toughest plug-in 12V ATX dc-dc power supply. The picoPSU is compatible with an entire range of mini-itx motherboards as well as regular boards. The picoPSU-160-XT provides a cool, silent 160 Watts (200 watt peak) of power for small PC designs using a single 12V power source.",
          "descriptionAuthor": "mini-box",
-         "type": "sff"
+         "type": "minibox160xt"
       }
 
     ]   

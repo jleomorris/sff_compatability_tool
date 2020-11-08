@@ -5,7 +5,7 @@
       "name": "K39", 
       "maxGpuSlots": 2,
       "maxGpuLength": 180,
-      "psuType": "sff",
+      "psuType": "1U",
       "maxCoolerHeight": 47,
       "isFiltered": false,
       "isSelected": false
@@ -199,7 +199,7 @@
         "descriptionAuthor": "bit-tech",
         "maxGpuSlots": "2",
         "maxGpuLength": 310,
-        "psuType": "sff",
+        "psuType": "node202",
         "maxCoolerHeight": 58,
         "isFiltered": false,
         "isSelected": false
@@ -275,7 +275,7 @@
         "name": "Lone industries L5",
         "maxGpuSlots": 0,
         "maxGpuLength": 185,
-        "psuType": "sff",
+        "psuType": "minibox160xt",
         "maxCoolerHeight": 70,
         "isFiltered": false,
         "isSelected": false
