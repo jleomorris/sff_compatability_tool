@@ -1,7 +1,7 @@
 # sff_compatability_tool
 
 ## Links
-* https://jleomorris.github.io/sff_compatability_tool/#tool
+* https://jleomorris.github.io/sff_compatability_tool/
 
 ## Description
 <p>This app is a compatability tool for small form factor (SFF) PC parts. It was developed using create-react-app and class components. For styling SCSS is used.
