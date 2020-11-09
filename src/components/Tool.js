@@ -53,6 +53,9 @@ class Tool extends Component {
       selectedPsu: null,
       selectedGpu: null,
       isbreakdownContainerReset: false,
+      filteredCpuCoolers: [],
+      filteredGpus: [],
+      filteredPsus: [],
       // myRef: []
     }
     this.handleBackClick = this.handleBackClick.bind(this);
@@ -66,6 +69,8 @@ class Tool extends Component {
     this.handlePsuEyeHover = this.handlePsuEyeHover.bind(this);
     this.handleGpuEyeHover = this.handleGpuEyeHover.bind(this);
     this.resetAll = this.resetAll.bind(this);
+    this.handleCarouselDown = this.handleCarouselDown.bind(this);
+    this.handleCarouselUp = this.handleCarouselUp.bind(this);
     this.myRef = [];
   }
 
@@ -117,7 +122,7 @@ class Tool extends Component {
       const filteredGpus = this.state.gpus.filter(gpu => gpu.length <= filteredCase.maxGpuLength)
       
       // Display filtered cpu coolers, psus and gpus
-      this.setState({ cases: selectedCases, cpuCoolers: filteredCpuCoolers, psus: filteredPsus, gpus: filteredGpus, isCaseSelected: true, selectedCase: filteredCase });
+      this.setState({ cases: selectedCases, cpuCoolers: filteredCpuCoolers, psus: filteredPsus, gpus: filteredGpus, isCaseSelected: true, selectedCase: filteredCase, filteredCpuCoolers: filteredCpuCoolers, filteredGpus, filteredGpus, filteredPsus: filteredPsus });
     })
           
   }
@@ -265,6 +270,48 @@ class Tool extends Component {
 
   }
 
+  handleCarouselUp(target) {
+    if(target === "cpuCooler"){
+      const currentId = this.state.filteredCpuCoolers.indexOf(this.state.selectedCpuCooler);
+      const decrementedId = currentId - 1;
+      if(decrementedId === -1) return;
+      this.setState( {selectedCpuCooler: this.state.filteredCpuCoolers[decrementedId]} );
+    }
+    if(target === "psu"){
+      const currentId = this.state.filteredPsus.indexOf(this.state.selectedPsu);
+      const decrementedId = currentId - 1;
+      if(decrementedId === -1) return;
+      this.setState( {selectedPsu: this.state.filteredPsus[decrementedId]} );
+    }
+    if(target === "gpu"){
+      const currentId = this.state.filteredGpus.indexOf(this.state.selectedGpu);
+      const decrementedId = currentId - 1;
+      if(decrementedId === -1) return;
+      this.setState( {selectedGpu: this.state.filteredGpus[decrementedId]} );
+    }
+  }
+
+  handleCarouselDown(target) {
+    if(target === "cpuCooler"){
+      const currentId = this.state.filteredCpuCoolers.indexOf(this.state.selectedCpuCooler);
+      const incrementedId = currentId + 1;
+      if(incrementedId === this.state.filteredCpuCoolers.length) return;
+      this.setState( {selectedCpuCooler: this.state.filteredCpuCoolers[incrementedId]} );
+    }  
+    if(target === "psu"){
+      const currentId = this.state.filteredPsus.indexOf(this.state.selectedPsu);
+      const incrementedId = currentId + 1;
+      if(incrementedId === this.state.filteredPsus.length) return;
+      this.setState( {selectedPsu: this.state.filteredPsus[incrementedId]} );
+    }  
+    if(target === "gpu"){
+      const currentId = this.state.filteredGpus.indexOf(this.state.selectedGpu);
+      const incrementedId = currentId + 1;
+      if(incrementedId === this.state.filteredGpus.length) return;
+      this.setState( {selectedGpu: this.state.filteredGpus[incrementedId]} );
+    }  
+  }
+
   // scrollToCpus = (event) => {
   //   console.log(this.myRef[0])
   //   this.myRef[0].scrollIntoView(); 
@@ -343,6 +390,8 @@ class Tool extends Component {
                     gpu={this.state.selectedGpu}
                     handleExitClick={this.resetAll}
                     handleBackClick={this.handleBackClick} 
+                    handleCarouselDown={this.handleCarouselDown}
+                    handleCarouselUp={this.handleCarouselUp}
                     /> 
                 : ''
               }

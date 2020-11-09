@@ -3,13 +3,11 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Container from 'react-bootstrap/Container';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import { faUndoAlt } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faUndoAlt, faSortUp, faSortDown, faLock } from "@fortawesome/free-solid-svg-icons";
 
 // The cards used below are based off Andre Madarangs clash of clan cards (https://codepen.io/drehimself/pen/QNXpyp)
 
-function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handleBackClick }) {
-  // debugger;
+function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handleBackClick, handleCarouselDown, handleCarouselUp }) {
   return (
     <div className="wrapper">
       <FontAwesomeIcon icon={faTimes} onClick={(() => handleExitClick())} />
@@ -17,9 +15,14 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
       <h2>Breakdown</h2>
 
       <Container fluid className="card-container">
+
         <div className="clash-card barbarian">
+        <div className="carousel-up-container">
+            <FontAwesomeIcon icon={faLock}/>
+          </div>
           <div className="clash-card__image clash-card__image--barbarian">
-            <img src={pcCase.imgUrl} alt="barbarian" />
+            {/* <img src={pcCase.imgUrl} alt="pc case" /> */}
+            <img src={process.env.PUBLIC_URL + pcCase.imgUrl} alt="pc case" />
           </div>
           <div className="clash-card__level clash-card__level--barbarian">Case</div>
           <div className="clash-card__unit-name">{pcCase.name}</div>
@@ -44,13 +47,16 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
               <div className="stat">{pcCase.maxGpuLength}cm</div>
               <div className="stat-value">max Gpu Length</div>
             </div>
-
           </div>
         </div>
 
         <div className="clash-card barbarian">
+          <div className="carousel-up-container">
+            <FontAwesomeIcon icon={faSortUp} onClick={() => { handleCarouselUp("cpuCooler") }}/>
+          </div>
           <div className="clash-card__image clash-card__image--barbarian">
-            <img src={cpuCooler.imgUrl} alt="barbarian" />
+            {/* <img src={cpuCooler.imgUrl} alt="cpu cooler" /> */}
+            <img src={process.env.PUBLIC_URL + cpuCooler.imgUrl} alt="cpu cooler" />
           </div>
           <div className="clash-card__level clash-card__level--barbarian">CPU cooler</div>
           <div className="clash-card__unit-name">{cpuCooler.name}</div>
@@ -63,13 +69,19 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
               <div className="stat">{cpuCooler.height}cm</div>
               <div className="stat-value">Height</div>
             </div>
-
+          </div>
+          <div className="carousel-down-container">
+            <FontAwesomeIcon icon={faSortDown} onClick={() => { handleCarouselDown("cpuCooler") }}/>
           </div>
         </div>
 
         <div className="clash-card barbarian">
+          <div className="carousel-up-container">
+            <FontAwesomeIcon icon={faSortUp} onClick={() => { handleCarouselUp("psu") }}/>
+          </div>
           <div className="clash-card__image clash-card__image--barbarian">
-            <img src={psu.imgUrl} alt="barbarian" />
+            {/* <img src={psu.imgUrl} alt="psu" /> */}
+            <img src={process.env.PUBLIC_URL + psu.imgUrl} alt="psu" />
           </div>
           <div className="clash-card__level clash-card__level--barbarian">PSU</div>
           <div className="clash-card__unit-name">{psu.name}</div>
@@ -82,13 +94,19 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
               <div className="stat">{psu.type}</div>
               <div className="stat-value">Type</div>
             </div>
-
+          </div>
+          <div className="carousel-down-container">
+            <FontAwesomeIcon icon={faSortDown} onClick={() => { handleCarouselDown("psu") }}/>
           </div>
         </div>
       
         <div className="clash-card barbarian">
+          <div className="carousel-up-container">
+            <FontAwesomeIcon icon={faSortUp} onClick={() => { handleCarouselUp("gpu") }}/>
+          </div>
           <div className="clash-card__image clash-card__image--barbarian">
-            <img src={gpu.imgUrl} alt="barbarian" />
+            {/* <img src={gpu.imgUrl} alt="gpu" /> */}
+            <img src={process.env.PUBLIC_URL + gpu.imgUrl} alt="gpu" />
           </div>
           <div className="clash-card__level clash-card__level--barbarian">GPU</div>
           <div className="clash-card__unit-name">{gpu.name}</div>
@@ -106,9 +124,12 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
               <div className="stat">{gpu.slots}</div>
               <div className="stat-value">Slots</div>
             </div>
-
+          </div>
+          <div className="carousel-down-container">
+            <FontAwesomeIcon icon={faSortDown} onClick={() => { handleCarouselDown("gpu") }}/>
           </div>
         </div>
+
       </Container>
 
     </div> 

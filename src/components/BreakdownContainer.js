@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import BreakdownGallery from './BreakdownGallery';
 
 class BreakdownContainer extends Component {
-// class BreakdownContainer extends component ({ cases, handleCaseClick, handleCheckClick }) {
   constructor(props) {
     super(props);
   }
@@ -31,6 +30,8 @@ class BreakdownContainer extends Component {
             gpu={this.props.gpu}
             handleExitClick={this.props.handleExitClick}
             handleBackClick={this.props.handleBackClick}  
+            handleCarouselDown={this.props.handleCarouselDown}
+            handleCarouselUp={this.props.handleCarouselUp}
           /> 
           : ''
         }
