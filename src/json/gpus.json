@@ -2,7 +2,7 @@
     "gpus": [ 	
        { 
         "id":"01", 
-        "imgUrl":"./img/1080ti_fe.png",
+        "imgUrl":"/img/1080ti_fe.png",
         "name": "1080ti FE", 
         "description": "The Nvidia GeForce GTX 1080 Ti is packing 3584 CUDA cores, 224 texture units and 88 ROPs. It comes with just a notch less video RAM than the god-like Titan X, but the 1080 Ti's 11GB complement of GDDR5X VRAM is tuned to a faster 11Gbps – clearly Nvidia is a fan of Spinal Tap – making this Nvidia's quickest Pascal card.",
         "descriptionAuthor": "techradar",
@@ -11,7 +11,7 @@
        },
        { 
         "id":"02", 
-        "imgUrl":"./img/zotac_1650_super.png",
+        "imgUrl":"/img/zotac_1650_super.png",
         "name": "Zotac 1650 super", 
         "description": "Zotac's punchy GeForce GTX 1650 Super Twin Fan is markedly better than the non-Super GTX 1650 and a solid version of this mainstream GPU. It gives budget-focused 1080p gamers a better option against competing AMD cards in the same price bracket.",
         "descriptionAuthor": "pcmag",
@@ -20,7 +20,7 @@
        },
        { 
         "id":"03", 
-        "imgUrl":"./img/zotac_2060_amp.png",
+        "imgUrl":"/img/zotac_2060_amp.png",
         "name": "Zotac 2060 amp", 
         "description": "The best value yet in the GeForce RTX 20-series lineup, the RTX 2060 is a worthy, if more expensive, successor to the venerable GTX 1060.",
         "descriptionAuthor": "pcmag",
@@ -29,7 +29,7 @@
        },
        { 
         "id":"04", 
-        "imgUrl":"./img/zotac_1660_super.png",
+        "imgUrl":"/img/zotac_1660_super.png",
         "name": "Zotac 1660 super", 
         "description": "If you've been holding off on a mainstream video card for 1080p gaming, the GeForce GTX 1660 Super could be your trigger to buy: It's a solid-playing, popularly priced waypoint between the GTX 1660 and GTX 1660 Ti.",
         "descriptionAuthor": "pcmag",
@@ -38,7 +38,7 @@
        },
        { 
         "id":"05", 
-        "imgUrl":"./img/Gigabyte_1660_OC.png",
+        "imgUrl":"/img/Gigabyte_1660_OC.png",
         "name": "Gigabyte 1660 OC", 
         "description": "The Gigabyte GeForce GTX 1660 OC 6G might not feature RT or Tensor cores, or even GDDR6 video memory, but it delivers excellent gaming performance and streaming capabilities for its entry-level price.",
         "descriptionAuthor": "techradar",
@@ -47,14 +47,14 @@
        },
        { 
         "id":"06", 
-        "imgUrl":"./img/Radeon_RX_5700_Challenger.png",
+        "imgUrl":"/img/Radeon_RX_5700_Challenger.png",
         "name": "ASRock RX 5700 Challenger",
         "slots": "2",
         "length": 241
       }, 
       { 
         "id":"06", 
-        "imgUrl":"./img/Asus_Radeon_RX_5700.png",
+        "imgUrl":"/img/Asus_Radeon_RX_5700.png",
         "name": "Asus Radeon RX 5700", 
         "description": "The RX 5700 is the lower priced alternative to the 5700 XT. It's as fast as Vega 64 and uses substantially less power, but still lacks DXR support.",
         "descriptionAuthor": "pcgamer", 
