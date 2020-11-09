@@ -732,6 +732,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 1rem;
   margin: 1rem auto;
+  margin-bottom: 5rem;
 }
 
 .breakdown-container .wrapper .clash-card {
@@ -748,12 +749,50 @@ a {
   margin: 2rem;
 }
 
+.breakdown-container .wrapper .clash-card .carousel-up-container {
+  position: absolute;
+  top: -55px;
+  width: 100%;
+}
+
+.breakdown-container .wrapper .clash-card .carousel-up-container .fa-sort-up {
+  font-size: 10rem;
+  color: #e9ecef;
+  cursor: pointer;
+}
+
+.breakdown-container .wrapper .clash-card .carousel-up-container .fa-lock {
+  font-size: 4rem;
+  color: #e9ecef;
+}
+
+.breakdown-container .wrapper .clash-card .carousel-down-container {
+  position: absolute;
+  bottom: -55px;
+  width: 100%;
+}
+
+.breakdown-container .wrapper .clash-card .carousel-down-container .fa-sort-down {
+  font-size: 10rem;
+  color: #e9ecef;
+  cursor: pointer;
+}
+
 .breakdown-container .wrapper .clash-card__image {
   position: relative;
   height: 230px;
   margin-bottom: 35px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .breakdown-container .wrapper .clash-card__image--barbarian {
@@ -815,6 +854,13 @@ a {
 
 .breakdown-container .wrapper .clash-card__unit-stats--barbarian .full {
   border-bottom: 1px solid #BD7C2F;
+}
+
+.breakdown-container .wrapper .clash-card__unit-stats--barbarian .full .fa-sort-down {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  cursor: pointer;
 }
 
 .breakdown-container .wrapper .clash-card__unit-stats--barbarian .full:last-child {
