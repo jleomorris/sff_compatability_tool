@@ -11,7 +11,8 @@ function CaseTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots
       <Tilt className="case" data-tilt style={ isFiltered ? { background: "rgba(197, 162, 31, 0.75)"} : '' }>
       <div className="Tilt-inner">
         {isSelected ? <FontAwesomeIcon icon={faCheckCircle} data-name={name} onClick={((e) => handleCheckClick(e, "case"))}  /> : '' }
-        <img src={imgUrl} onClick={((e) => handleCaseClick(e))} data-name={name}></img>
+        {/* <img src={imgUrl} onClick={((e) => handleCaseClick(e))} data-name={name}></img> */}
+        <img src={process.env.PUBLIC_URL + imgUrl} onClick={((e) => handleCaseClick(e))} data-name={name}></img>
         <p>{name}</p>
       </div>  
       </Tilt>

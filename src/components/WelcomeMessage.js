@@ -51,7 +51,7 @@ function WelcomeMessage() {
 
                 <Col xl={5} className="hero-image">
                   <div className="hero-image-circle"></div>
-                  <img src="./img/kolink1.png"></img>
+                  <img src={process.env.PUBLIC_URL + '/img/kolink1.png'}></img>
                 </Col>
               </Row>
 

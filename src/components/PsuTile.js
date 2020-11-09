@@ -13,7 +13,7 @@ function PsuTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots,
       <div className="Tilt-inner">
         {isSelected ? <FontAwesomeIcon icon={faCheckCircle} data-name={name} onClick={((e) => handleCheckClick(e, "psu"))}  /> : '' }
         <FontAwesomeIcon icon={faEye} data-name={name} onMouseEnter={e => handlePsuEyeHover(e)} onMouseLeave={e => handlePsuEyeLeave(e)}/>
-        <img src={imgUrl} data-name={name} onClick={((e) => handlePsuClick(e))}></img>
+        <img src={process.env.PUBLIC_URL + imgUrl} data-name={name} onClick={((e) => handlePsuClick(e))}></img>
         <p>{name}</p>
       </div>  
       </Tilt>

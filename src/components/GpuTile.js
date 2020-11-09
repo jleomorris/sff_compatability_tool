@@ -16,7 +16,7 @@ function GpuTile({ id, name, imgUrl, maxCoolerHeight, maxGpuLength, maxGpuSlots,
       <div className="Tilt-inner">
         {isSelected ? <FontAwesomeIcon icon={faCheckCircle} data-name={name} onClick={((e) => handleCheckClick(e, "gpu"))}  /> : '' }
         <FontAwesomeIcon icon={faEye} data-name={name} onMouseEnter={e => handleGpuEyeHover(e)} onMouseLeave={ e => handleGpuEyeLeave(e)} />
-        <img src={imgUrl} data-name={name} onClick={((e) => handleClick(e))} ></img>
+        <img src={process.env.PUBLIC_URL + imgUrl} data-name={name} onClick={((e) => handleClick(e))} ></img>
         <p>{name}</p>
       </div>  
       </Tilt>
