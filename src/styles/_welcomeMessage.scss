@@ -42,8 +42,8 @@
       justify-content: center;
 
       .hero-image-circle {
-        height: 550px;
-        width: 550px;
+        height: 90%;
+        width: 80%;
         background: #e4c50182;
         border-radius: 50%;
         position: absolute;
@@ -53,13 +53,13 @@
       }
 
       img {
-        width: 600px;
+        width: 90%;
         z-index: 5;
       }
     }
 
     .hero-content {
-      margin-right: 10rem;
+      // margin-right: 10rem;
       z-index: 5;
 
       p {
