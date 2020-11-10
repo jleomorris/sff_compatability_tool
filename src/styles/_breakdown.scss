@@ -205,6 +205,14 @@ $barbarian: #EC9B3B;
         float: left;
         padding: 20px 15px;
 
+        .cpu-cooler-number-label{
+          color: black;
+          text-transform: uppercase;
+          font-weight: 900;
+          font-size: 12px;
+          word-break: break-all;
+          margin-top: 1rem;
+        }
       }
       
       sup {
@@ -226,6 +234,7 @@ $barbarian: #EC9B3B;
         font-size: 12px;
         word-break: break-all;
       }
+
     
       .no-border {
         border-right: none;
