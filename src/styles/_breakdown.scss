@@ -71,35 +71,6 @@ $barbarian: #EC9B3B;
       box-shadow: -1px 15px 30px -12px black;
       z-index: 9999;
       // margin: 2rem;
-
-      .carousel-up-container {
-        position: absolute;
-        top: -55px;
-        width: 100%;
-
-        .fa-sort-up {
-          font-size: 10rem;
-          color: #e9ecef;
-          cursor: pointer;
-        }
-
-        .fa-lock {
-          font-size: 4rem;
-          color: #e9ecef;
-        }
-      }
-
-      .carousel-down-container {
-        position: absolute;
-        bottom: -55px;
-        width: 100%;
-
-        .fa-sort-down {
-          font-size: 10rem;
-          color: #e9ecef;
-          cursor: pointer;
-        }
-      }
     }
   
     .clash-card__image {
@@ -123,6 +94,54 @@ $barbarian: #EC9B3B;
         // position: absolute;    
         top: -65px;
         left: -70px;
+      }
+
+      .lock-container {
+        position: absolute;
+        top: 5px;
+
+        .fa-lock {
+          font-size: 4rem;
+          color: #e9ecef;
+        }
+      }
+
+      .carousel-up-container {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        transform: rotate(270deg);
+        // width: 100%;
+        
+        .fa-sort-up {
+          font-size: 5rem;
+          color: #1b1b1cdc;
+          cursor: pointer;
+        }
+      }
+      
+      .carousel-down-container {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        transform: rotate(270deg);
+        // width: 100%;
+        
+        .fa-sort-down {
+          font-size: 5rem;
+          color: #1b1b1cdc;
+          cursor: pointer;
+        }
+      }
+
+      .cpu-cooler-number-label{
+        color: black;
+        font-weight: 900;
+        font-size: 12px;
+        word-break: break-all;
+        margin-top: 1rem;
+        position: absolute;
+        top: 5px;
       }
     }
   
@@ -204,15 +223,6 @@ $barbarian: #EC9B3B;
         width: 100%;
         float: left;
         padding: 20px 15px;
-
-        .cpu-cooler-number-label{
-          color: black;
-          text-transform: uppercase;
-          font-weight: 900;
-          font-size: 12px;
-          word-break: break-all;
-          margin-top: 1rem;
-        }
       }
       
       sup {

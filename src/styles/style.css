@@ -767,35 +767,6 @@ a {
   z-index: 9999;
 }
 
-.breakdown-container .wrapper .clash-card .carousel-up-container {
-  position: absolute;
-  top: -55px;
-  width: 100%;
-}
-
-.breakdown-container .wrapper .clash-card .carousel-up-container .fa-sort-up {
-  font-size: 10rem;
-  color: #e9ecef;
-  cursor: pointer;
-}
-
-.breakdown-container .wrapper .clash-card .carousel-up-container .fa-lock {
-  font-size: 4rem;
-  color: #e9ecef;
-}
-
-.breakdown-container .wrapper .clash-card .carousel-down-container {
-  position: absolute;
-  bottom: -55px;
-  width: 100%;
-}
-
-.breakdown-container .wrapper .clash-card .carousel-down-container .fa-sort-down {
-  font-size: 10rem;
-  color: #e9ecef;
-  cursor: pointer;
-}
-
 .breakdown-container .wrapper .clash-card__image {
   position: relative;
   height: 230px;
@@ -826,6 +797,54 @@ a {
   width: 90%;
   top: -65px;
   left: -70px;
+}
+
+.breakdown-container .wrapper .clash-card__image--barbarian .lock-container {
+  position: absolute;
+  top: 5px;
+}
+
+.breakdown-container .wrapper .clash-card__image--barbarian .lock-container .fa-lock {
+  font-size: 4rem;
+  color: #e9ecef;
+}
+
+.breakdown-container .wrapper .clash-card__image--barbarian .carousel-up-container {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.breakdown-container .wrapper .clash-card__image--barbarian .carousel-up-container .fa-sort-up {
+  font-size: 5rem;
+  color: #1b1b1cdc;
+  cursor: pointer;
+}
+
+.breakdown-container .wrapper .clash-card__image--barbarian .carousel-down-container {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.breakdown-container .wrapper .clash-card__image--barbarian .carousel-down-container .fa-sort-down {
+  font-size: 5rem;
+  color: #1b1b1cdc;
+  cursor: pointer;
+}
+
+.breakdown-container .wrapper .clash-card__image--barbarian .cpu-cooler-number-label {
+  color: black;
+  font-weight: 900;
+  font-size: 12px;
+  word-break: break-all;
+  margin-top: 1rem;
+  position: absolute;
+  top: 5px;
 }
 
 .breakdown-container .wrapper .clash-card__level {
@@ -902,15 +921,6 @@ a {
   width: 100%;
   float: left;
   padding: 20px 15px;
-}
-
-.breakdown-container .wrapper .clash-card__unit-stats .full .cpu-cooler-number-label {
-  color: black;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 12px;
-  word-break: break-all;
-  margin-top: 1rem;
 }
 
 .breakdown-container .wrapper .clash-card__unit-stats sup {

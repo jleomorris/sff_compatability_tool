@@ -18,14 +18,14 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
 
       <Container fluid className="card-container">
         <Row className="align-items-md-start">
-          <Col md={3} xs={6} className="d-flex justify-content-center mt-5 mb-5">
-            <div className="clash-card barbarian">
-            <div className="carousel-up-container">
-                <FontAwesomeIcon icon={faLock}/>
-              </div>
+          <Col md={3} xs={12} className="d-flex justify-content-center mt-5 mb-5">
+            <div className="clash-card barbarian mb-5 mt-5">
               <div className="clash-card__image clash-card__image--barbarian">
                 {/* <img src={pcCase.imgUrl} alt="pc case" /> */}
                 <img src={process.env.PUBLIC_URL + pcCase.imgUrl} alt="pc case" />
+                <div className="lock-container">
+                  <FontAwesomeIcon icon={faLock}/>
+                </div>
               </div>
               <div className="clash-card__level clash-card__level--barbarian">Case</div>
               <div className="clash-card__unit-name">{pcCase.name}</div>
@@ -53,14 +53,18 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
               </div>
             </div>
           </Col>
-          <Col md={3} xs={6} className="d-flex justify-content-center mt-5 mb-5">
-            <div className="clash-card barbarian">
-              <div className="carousel-up-container">
-                <FontAwesomeIcon icon={faSortUp} onClick={() => { handleCarouselUp("cpuCooler") }}/>
-              </div>
+          <Col md={3} xs={12} className="d-flex justify-content-center mt-5 mb-5">
+            <div className="clash-card barbarian mb-5 mt-5">
               <div className="clash-card__image clash-card__image--barbarian">
                 {/* <img src={cpuCooler.imgUrl} alt="cpu cooler" /> */}
                 <img src={process.env.PUBLIC_URL + cpuCooler.imgUrl} alt="cpu cooler" />
+                <div className="carousel-up-container">
+                  <FontAwesomeIcon icon={faSortUp} onClick={() => { handleCarouselUp("cpuCooler") }}/>
+                </div>
+                <div className="carousel-down-container">
+                  <FontAwesomeIcon icon={faSortDown} onClick={() => { handleCarouselDown("cpuCooler") }}/>
+                </div>
+                <div className="cpu-cooler-number-label">{`${filteredCpuCoolers.indexOf(cpuCooler) + 1} of ${filteredCpuCoolers.length}`}</div>
               </div>
               <div className="clash-card__level clash-card__level--barbarian">CPU cooler</div>
               <div className="clash-card__unit-name">{cpuCooler.name}</div>
@@ -72,22 +76,22 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
                 <div className="full">
                   <div className="stat">{cpuCooler.height}cm</div>
                   <div className="stat-value">Height</div>
-                  <div className="cpu-cooler-number-label">{`${filteredCpuCoolers.indexOf(cpuCooler) + 1} of ${filteredCpuCoolers.length}`}</div>
                 </div>
-              </div>
-              <div className="carousel-down-container">
-                <FontAwesomeIcon icon={faSortDown} onClick={() => { handleCarouselDown("cpuCooler") }}/>
               </div>
             </div>
           </Col>
-          <Col md={3} xs={6} className="d-flex justify-content-center mt-5 mb-5">
-            <div className="clash-card barbarian">
-              <div className="carousel-up-container">
-                <FontAwesomeIcon icon={faSortUp} onClick={() => { handleCarouselUp("psu") }}/>
-              </div>
+          <Col md={3} xs={12} className="d-flex justify-content-center mt-5 mb-5">
+            <div className="clash-card barbarian mb-5 mt-5">
               <div className="clash-card__image clash-card__image--barbarian">
                 {/* <img src={psu.imgUrl} alt="psu" /> */}
                 <img src={process.env.PUBLIC_URL + psu.imgUrl} alt="psu" />
+                <div className="carousel-up-container">
+                  <FontAwesomeIcon icon={faSortUp} onClick={() => { handleCarouselUp("psu") }}/>
+                </div>
+                <div className="carousel-down-container">
+                  <FontAwesomeIcon icon={faSortDown} onClick={() => { handleCarouselDown("psu") }}/>
+                </div>
+                <div className="cpu-cooler-number-label">{`${filteredPsus.indexOf(psu) + 1} of ${filteredPsus.length}`}</div>
               </div>
               <div className="clash-card__level clash-card__level--barbarian">PSU</div>
               <div className="clash-card__unit-name">{psu.name}</div>
@@ -99,22 +103,22 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
                 <div className="full">
                   <div className="stat">{psu.type}</div>
                   <div className="stat-value">Type</div>
-                  <div className="cpu-cooler-number-label">{`${filteredPsus.indexOf(psu) + 1} of ${filteredPsus.length}`}</div>
                 </div>
-              </div>
-              <div className="carousel-down-container">
-                <FontAwesomeIcon icon={faSortDown} onClick={() => { handleCarouselDown("psu") }}/>
               </div>
             </div>
           </Col>
-          <Col md={3} xs={6} className="d-flex justify-content-center mt-5 mb-5">
-            <div className="clash-card barbarian">
-              <div className="carousel-up-container">
-                <FontAwesomeIcon icon={faSortUp} onClick={() => { handleCarouselUp("gpu") }}/>
-              </div>
+          <Col md={3} xs={12} className="d-flex justify-content-center mt-5 mb-5">
+            <div className="clash-card barbarian mb-5 mt-5">
               <div className="clash-card__image clash-card__image--barbarian">
                 {/* <img src={gpu.imgUrl} alt="gpu" /> */}
                 <img src={process.env.PUBLIC_URL + gpu.imgUrl} alt="gpu" />
+                <div className="carousel-up-container">
+                  <FontAwesomeIcon icon={faSortUp} onClick={() => { handleCarouselUp("gpu") }}/>
+                </div>
+                <div className="carousel-down-container">
+                  <FontAwesomeIcon icon={faSortDown} onClick={() => { handleCarouselDown("gpu") }}/>
+                </div>
+                <div className="cpu-cooler-number-label">{`${filteredGpus.indexOf(gpu) + 1} of ${filteredGpus.length}`}</div>
               </div>
               <div className="clash-card__level clash-card__level--barbarian">GPU</div>
               <div className="clash-card__unit-name">{gpu.name}</div>
@@ -131,11 +135,7 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
                 <div className="full">
                   <div className="stat">{gpu.slots}</div>
                   <div className="stat-value">Slots</div>
-                  <div className="cpu-cooler-number-label">{`${filteredGpus.indexOf(gpu) + 1} of ${filteredGpus.length}`}</div>
                 </div>
-              </div>
-              <div className="carousel-down-container">
-                <FontAwesomeIcon icon={faSortDown} onClick={() => { handleCarouselDown("gpu") }}/>
               </div>
             </div>
           </Col>
