@@ -392,6 +392,9 @@ class Tool extends Component {
                     handleBackClick={this.handleBackClick} 
                     handleCarouselDown={this.handleCarouselDown}
                     handleCarouselUp={this.handleCarouselUp}
+                    filteredCpuCoolers={this.state.filteredCpuCoolers}
+                    filteredPsus={this.state.filteredPsus}
+                    filteredGpus={this.state.filteredGpus}
                     /> 
                 : ''
               }

@@ -7,7 +7,7 @@ import { faTimes, faUndoAlt, faSortUp, faSortDown, faLock } from "@fortawesome/f
 
 // The cards used below are based off Andre Madarangs clash of clan cards (https://codepen.io/drehimself/pen/QNXpyp)
 
-function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handleBackClick, handleCarouselDown, handleCarouselUp }) {
+function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handleBackClick, handleCarouselDown, handleCarouselUp, filteredCpuCoolers, filteredPsus, filteredGpus }) {
   return (
     <div className="wrapper">
       <FontAwesomeIcon icon={faTimes} onClick={(() => handleExitClick())} />
@@ -68,6 +68,7 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
             <div className="full">
               <div className="stat">{cpuCooler.height}cm</div>
               <div className="stat-value">Height</div>
+              <div className="cpu-cooler-number-label">{`${filteredCpuCoolers.indexOf(cpuCooler) + 1} of ${filteredCpuCoolers.length}`}</div>
             </div>
           </div>
           <div className="carousel-down-container">
@@ -93,6 +94,7 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
             <div className="full">
               <div className="stat">{psu.type}</div>
               <div className="stat-value">Type</div>
+              <div className="cpu-cooler-number-label">{`${filteredPsus.indexOf(psu) + 1} of ${filteredPsus.length}`}</div>
             </div>
           </div>
           <div className="carousel-down-container">
@@ -123,6 +125,7 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
             <div className="full">
               <div className="stat">{gpu.slots}</div>
               <div className="stat-value">Slots</div>
+              <div className="cpu-cooler-number-label">{`${filteredGpus.indexOf(gpu) + 1} of ${filteredGpus.length}`}</div>
             </div>
           </div>
           <div className="carousel-down-container">

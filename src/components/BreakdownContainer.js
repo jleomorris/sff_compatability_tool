@@ -32,6 +32,9 @@ class BreakdownContainer extends Component {
             handleBackClick={this.props.handleBackClick}  
             handleCarouselDown={this.props.handleCarouselDown}
             handleCarouselUp={this.props.handleCarouselUp}
+            filteredCpuCoolers={this.props.filteredCpuCoolers}
+            filteredPsus={this.props.filteredPsus}
+            filteredGpus={this.props.filteredGpus}
           /> 
           : ''
         }
