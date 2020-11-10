@@ -8,8 +8,12 @@ class BreakdownContainer extends Component {
   }
 
   componentDidMount() {
-    // const breakdownContainerHeight = document.querySelectorAll(".breakdown-container")[0].offsetHeight;
-    // console.log(breakdownContainerHeight);
+    let heightToAdjustTo = document.querySelectorAll(".card-container")[0].offsetHeight;
+    let mainContainerHeight = document.querySelectorAll(".main-container")[0].offsetHeight;
+
+    if (mainContainerHeight > heightToAdjustTo) return;
+    
+    document.querySelectorAll(".main-container")[0].style.height = `${heightToAdjustTo}px`;
   }
 
   render() {
