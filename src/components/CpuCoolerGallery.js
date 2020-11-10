@@ -2,7 +2,7 @@ import React from 'react';
 import CpuCoolerTile from './CpuCoolerTile';
 
 function CpuCoolerGallery({ cpuCoolers, handleCpuClick, handleCpuEyeHover, handleCpuEyeLeave, handleCheckClick }) {
-  return (
+  const cpuCoolersMap = (
     cpuCoolers.map(cpuCooler => {
       return <CpuCoolerTile
                 key={cpuCooler.name} 
@@ -15,6 +15,12 @@ function CpuCoolerGallery({ cpuCoolers, handleCpuClick, handleCpuEyeHover, handl
                 handleCheckClick={handleCheckClick}
               />
     })
+  )
+  return (
+    <>
+    <h2>CPU cooler</h2>
+    {cpuCoolersMap}
+    </>
   )
 }
 

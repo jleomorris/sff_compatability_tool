@@ -334,73 +334,87 @@ class Tool extends Component {
 
   render() {
     return (
-          <>
+          <Container fluid className="p-0">
             <div className="tool-wave-container">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#36003aa1" fillOpacity="1" d="M0,64L80,90.7C160,117,320,171,480,160C640,149,800,75,960,48C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
             </div>
 
             <Container fluid className="p-0">
-              <div className="main-container-titles-container" id="tool">
-                <div className="main-container-titles">Case</div>
-                <div className="main-container-titles">Cpu cooler</div>
-                <div className="main-container-titles">PSU</div>
-                <div className="main-container-titles">GPU</div>
-              </div>
+              {/* <Row>
+                <Col xs={12}>
+                  <div className="main-container-titles-container">
+                    <div className="main-container-titles">Case</div>
+                    <div className="main-container-titles">Cpu cooler</div>
+                    <div className="main-container-titles">PSU</div>
+                    <div className="main-container-titles">GPU</div>
+                  </div>
+                </Col>
+              </Row> */}
+              <Row>
+                <Col xs={12}>
+                  <div className="main-container">
+
+                  <Row>
+                    <Col md={3}>
+                      <Container fluid className="case-container mb-5">
+                        <CaseGallery cases={this.state.cases} handleCaseClick={this.handleCaseClick} handleCheckClick={this.handleCheckClick} />
+                      </Container>
+                      {/* <h2 ref={(ref) => { this.myRef[0] = ref }}>CPU cooler</h2> */}
+                    </Col>
+                    <Col md={3}>
+                      <Container fluid className="cpu-cooler-container mb-5">
+                        <CpuCoolerGallery cpuCoolers={this.state.cpuCoolers} handleCpuClick={this.handleCpuClick} handleCpuEyeHover={this.handleCpuEyeHover} handleCpuEyeLeave={this.resetCaseTiles} handleCheckClick={this.handleCheckClick} />
+                      </Container>
+                      {/* <h2 ref={(ref) => { this.myRef[1] = ref }}>PSU</h2> */}
+                    </Col>
+                    <Col md={3}>
+                      <Container className="psu-container mb-5">
+                        <PsuGallery psus={this.state.psus} handlePsuClick={this.handlePsuClick} handlePsuEyeHover={this.handlePsuEyeHover} handlePsuEyeLeave={this.resetCaseTiles} handleCheckClick={this.handleCheckClick} />
+                      </Container>
+                      {/* <h2 ref={(ref) => { this.myRef[2] = ref }}>GPU</h2> */}
+                    </Col>
+                    <Col md={3}>
+                      <Container className="gpu-container mb-5">
+                        <GpuGallery gpus={this.state.gpus} handleGpuClick={this.handleGpuClick} handleGpuEyeHover={this.handleGpuEyeHover} handleGpuEyeLeave={this.resetCaseTiles} handleCheckClick={this.handleCheckClick} />
+                      </Container>
+                    </Col>
+                  </Row>
+                
+                  {this.state.isCaseSelected && 
+                    this.state.isCpuCoolerSelected && 
+                    this.state.isPsuSelected && 
+                    this.state.isGpuSelected && 
+                    !this.state.isbreakdownContainerReset 
+                    ? <BreakdownContainer 
+                        uniqueRef={(ref) => { this.myRef[3] = ref }} 
+                        isCaseSelected={this.state.isCaseSelected} 
+                        isCpuCoolerSelected={this.state.isCpuCoolerSelected}
+                        isPsuSelected={this.state.isPsuSelected}
+                        isGpuSelected={this.state.isGpuSelected}
+                        pcCase={this.state.selectedCase} 
+                        cpuCooler={this.state.selectedCpuCooler} 
+                        psu={this.state.selectedPsu} 
+                        gpu={this.state.selectedGpu}
+                        handleExitClick={this.resetAll}
+                        handleBackClick={this.handleBackClick} 
+                        handleCarouselDown={this.handleCarouselDown}
+                        handleCarouselUp={this.handleCarouselUp}
+                        filteredCpuCoolers={this.state.filteredCpuCoolers}
+                        filteredPsus={this.state.filteredPsus}
+                        filteredGpus={this.state.filteredGpus}
+                        /> 
+                    : ''
+                  }
+
+                  </div>
+
+                </Col>
+              </Row>
             </Container>
 
 
-            <div className="main-container">
 
-              <div className="case-container">
-                <CaseGallery cases={this.state.cases} handleCaseClick={this.handleCaseClick} handleCheckClick={this.handleCheckClick} />
-              </div>
-
-              {/* <h2 ref={(ref) => { this.myRef[0] = ref }}>CPU cooler</h2> */}
-
-              <div className="cpu-cooler-container">
-                <CpuCoolerGallery cpuCoolers={this.state.cpuCoolers} handleCpuClick={this.handleCpuClick} handleCpuEyeHover={this.handleCpuEyeHover} handleCpuEyeLeave={this.resetCaseTiles} handleCheckClick={this.handleCheckClick} />
-              </div>
-
-              {/* <h2 ref={(ref) => { this.myRef[1] = ref }}>PSU</h2> */}
-
-              <div className="psu-container">
-                <PsuGallery psus={this.state.psus} handlePsuClick={this.handlePsuClick} handlePsuEyeHover={this.handlePsuEyeHover} handlePsuEyeLeave={this.resetCaseTiles} handleCheckClick={this.handleCheckClick} />
-              </div>
-
-              {/* <h2 ref={(ref) => { this.myRef[2] = ref }}>GPU</h2> */}
-
-              <div className="gpu-container">
-                <GpuGallery gpus={this.state.gpus} handleGpuClick={this.handleGpuClick} handleGpuEyeHover={this.handleGpuEyeHover} handleGpuEyeLeave={this.resetCaseTiles} handleCheckClick={this.handleCheckClick} />
-              </div>
-
-              {this.state.isCaseSelected && 
-                this.state.isCpuCoolerSelected && 
-                this.state.isPsuSelected && 
-                this.state.isGpuSelected && 
-                !this.state.isbreakdownContainerReset 
-                ? <BreakdownContainer 
-                    uniqueRef={(ref) => { this.myRef[3] = ref }} 
-                    isCaseSelected={this.state.isCaseSelected} 
-                    isCpuCoolerSelected={this.state.isCpuCoolerSelected}
-                    isPsuSelected={this.state.isPsuSelected}
-                    isGpuSelected={this.state.isGpuSelected}
-                    pcCase={this.state.selectedCase} 
-                    cpuCooler={this.state.selectedCpuCooler} 
-                    psu={this.state.selectedPsu} 
-                    gpu={this.state.selectedGpu}
-                    handleExitClick={this.resetAll}
-                    handleBackClick={this.handleBackClick} 
-                    handleCarouselDown={this.handleCarouselDown}
-                    handleCarouselUp={this.handleCarouselUp}
-                    filteredCpuCoolers={this.state.filteredCpuCoolers}
-                    filteredPsus={this.state.filteredPsus}
-                    filteredGpus={this.state.filteredGpus}
-                    /> 
-                : ''
-              }
-            </div>
-
-          </>
+          </Container>
       
     );
   }

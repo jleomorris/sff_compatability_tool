@@ -41,13 +41,15 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-        <Navigation />
-        <WelcomeMessage />
-        <TutorialCards />
-        <Tool />
-        <Footer />
-      </Router>
+      <Container fluid className="p-0">
+        <Router>
+          <Navigation />
+          <WelcomeMessage />
+          <TutorialCards />
+          <Tool />
+          <Footer />
+        </Router>
+      </Container>
     );
   }
   

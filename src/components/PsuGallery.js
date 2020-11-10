@@ -2,7 +2,7 @@ import React from 'react';
 import PsuTile from './PsuTile';
 
 function PsuGallery({ psus, handlePsuClick, handlePsuEyeHover, handlePsuEyeLeave, handleCheckClick }) {
-  return (
+  const psuMap = (
     psus.map(psu => {
       return <PsuTile
                 key={psu.name} 
@@ -15,6 +15,12 @@ function PsuGallery({ psus, handlePsuClick, handlePsuEyeHover, handlePsuEyeLeave
                 isSelected={psu.isSelected}
               />
     })
+  )
+  return (
+    <>
+      <h2>PSU</h2>
+      {psuMap}  
+    </>
   )
 }
 

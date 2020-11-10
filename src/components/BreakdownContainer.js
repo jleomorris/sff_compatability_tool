@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BreakdownGallery from './BreakdownGallery';
+import Container from 'react-bootstrap/Container';
 
 class BreakdownContainer extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class BreakdownContainer extends Component {
   render() {
     // debugger;
     return (
-      <div ref={this.props.uniqueRef} className="breakdown-container">
+      <Container fluid ref={this.props.uniqueRef} className="p-0 breakdown-container">
         {this.props.isCaseSelected 
           && 
           this.props.isCpuCoolerSelected 
@@ -38,7 +39,7 @@ class BreakdownContainer extends Component {
           /> 
           : ''
         }
-      </div>
+      </Container> 
     )
   }
 }

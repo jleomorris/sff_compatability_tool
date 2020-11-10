@@ -2,7 +2,7 @@ import React from 'react';
 import GpuTile from './GpuTile';
 
 function GpuGallery({ gpus, handleGpuClick, handleGpuEyeHover, handleGpuEyeLeave, handleCheckClick }) {
-  return (
+  const gpuMap = (
     gpus.map(gpu => {
       return <GpuTile
                 key={gpu.name} 
@@ -15,6 +15,13 @@ function GpuGallery({ gpus, handleGpuClick, handleGpuEyeHover, handleGpuEyeLeave
                 isSelected={gpu.isSelected}
               />
     })
+  )
+
+  return (
+    <>
+      <h2>GPU</h2>
+      {gpuMap}  
+    </>
   )
 }
 
