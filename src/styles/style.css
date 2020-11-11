@@ -719,10 +719,10 @@ a {
 }
 
 .breakdown-container .wrapper .fa-times {
-  font-size: 6rem;
+  font-size: 3rem;
   position: absolute;
   top: 15px;
-  right: 30px;
+  right: 15px;
 }
 
 .breakdown-container .wrapper .fa-times:hover {
@@ -730,10 +730,10 @@ a {
 }
 
 .breakdown-container .wrapper .fa-undo-alt {
-  font-size: 5rem;
+  font-size: 2.5rem;
   position: absolute;
-  top: 20px;
-  right: 90px;
+  top: 18px;
+  right: 50px;
 }
 
 .breakdown-container .wrapper .fa-undo-alt:hover {
@@ -742,7 +742,7 @@ a {
 
 .breakdown-container .wrapper h2 {
   color: white;
-  font-size: 6rem;
+  font-size: 4rem;
   border: 1px solid white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -750,8 +750,7 @@ a {
   padding: 1rem 3rem;
   text-transform: uppercase;
   letter-spacing: 1rem;
-  margin: 1rem auto;
-  margin-bottom: 5rem;
+  margin: 2rem auto;
 }
 
 .breakdown-container .wrapper .clash-card {
@@ -769,8 +768,8 @@ a {
 
 .breakdown-container .wrapper .clash-card__image {
   position: relative;
-  height: 230px;
-  margin-bottom: 35px;
+  height: 200px;
+  margin-bottom: 20px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   display: -webkit-box;
@@ -794,7 +793,7 @@ a {
 }
 
 .breakdown-container .wrapper .clash-card__image--barbarian img {
-  width: 90%;
+  width: 70%;
   top: -65px;
   left: -70px;
 }
@@ -867,7 +866,7 @@ a {
 }
 
 .breakdown-container .wrapper .clash-card__unit-description {
-  padding: 20px;
+  padding: 10px 20px;
   margin-bottom: 10px;
 }
 

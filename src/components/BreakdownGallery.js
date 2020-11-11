@@ -18,8 +18,8 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
 
       <Container fluid className="card-container">
         <Row className="align-items-md-start">
-          <Col md={3} xs={12} className="d-flex justify-content-center mt-5 mb-5">
-            <div className="clash-card barbarian mb-5 mt-5">
+          <Col md={3} xs={12} className="d-flex justify-content-center mt-5">
+            <div className="clash-card barbarian">
               <div className="clash-card__image clash-card__image--barbarian">
                 {/* <img src={pcCase.imgUrl} alt="pc case" /> */}
                 <img src={process.env.PUBLIC_URL + pcCase.imgUrl} alt="pc case" />
@@ -53,8 +53,8 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
               </div>
             </div>
           </Col>
-          <Col md={3} xs={12} className="d-flex justify-content-center mt-5 mb-5">
-            <div className="clash-card barbarian mb-5 mt-5">
+          <Col md={3} xs={12} className="d-flex justify-content-center mt-5">
+            <div className="clash-card barbarian">
               <div className="clash-card__image clash-card__image--barbarian">
                 {/* <img src={cpuCooler.imgUrl} alt="cpu cooler" /> */}
                 <img src={process.env.PUBLIC_URL + cpuCooler.imgUrl} alt="cpu cooler" />
@@ -80,8 +80,8 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
               </div>
             </div>
           </Col>
-          <Col md={3} xs={12} className="d-flex justify-content-center mt-5 mb-5">
-            <div className="clash-card barbarian mb-5 mt-5">
+          <Col md={3} xs={12} className="d-flex justify-content-center mt-5">
+            <div className="clash-card barbarian">
               <div className="clash-card__image clash-card__image--barbarian">
                 {/* <img src={psu.imgUrl} alt="psu" /> */}
                 <img src={process.env.PUBLIC_URL + psu.imgUrl} alt="psu" />
@@ -107,8 +107,8 @@ function BreakdownGallery({ pcCase, cpuCooler, psu, gpu, handleExitClick, handle
               </div>
             </div>
           </Col>
-          <Col md={3} xs={12} className="d-flex justify-content-center mt-5 mb-5">
-            <div className="clash-card barbarian mb-5 mt-5">
+          <Col md={3} xs={12} className="d-flex justify-content-center mt-5">
+            <div className="clash-card barbarian">
               <div className="clash-card__image clash-card__image--barbarian">
                 {/* <img src={gpu.imgUrl} alt="gpu" /> */}
                 <img src={process.env.PUBLIC_URL + gpu.imgUrl} alt="gpu" />
