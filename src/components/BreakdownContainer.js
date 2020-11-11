@@ -8,12 +8,12 @@ class BreakdownContainer extends Component {
   }
 
   componentDidMount() {
+    // Dynamically set main contaier height to match card container (prevents overlap issues on mobile)
     let heightToAdjustTo = document.querySelectorAll(".card-container")[0].offsetHeight;
     let mainContainerHeight = document.querySelectorAll(".main-container")[0].offsetHeight;
 
     if (mainContainerHeight > heightToAdjustTo) return;
-    
-    document.querySelectorAll(".main-container")[0].style.height = `${heightToAdjustTo}px`;
+    document.querySelectorAll(".main-container")[0].style.height = `${heightToAdjustTo + 250}px`;
   }
 
   render() {
