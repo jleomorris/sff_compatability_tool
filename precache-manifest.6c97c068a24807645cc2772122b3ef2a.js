@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90c30486746ebcbc234897a394d88db5",
+    "revision": "08690ed1d71aa5e2f753ba8343312085",
     "url": "/sff_compatability_tool/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sff_compatability_tool/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "e13bfb551f26e0e6ff0d",
-    "url": "/sff_compatability_tool/static/css/main.e4408ba6.chunk.css"
+    "revision": "b8ae2f76d106019054e5",
+    "url": "/sff_compatability_tool/static/css/main.a94bf8f8.chunk.css"
   },
   {
     "revision": "b73c3fb3ae54b9ae3367",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sff_compatability_tool/static/js/2.165f80a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e13bfb551f26e0e6ff0d",
-    "url": "/sff_compatability_tool/static/js/main.b96c3ca2.chunk.js"
+    "revision": "b8ae2f76d106019054e5",
+    "url": "/sff_compatability_tool/static/js/main.7ad5cc9b.chunk.js"
   },
   {
     "revision": "68d3121f0fba51a7717a",
